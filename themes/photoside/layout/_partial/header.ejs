@@ -1,0 +1,24 @@
+<header id="header">
+    <h1 class="logo">
+        <a href="/">
+            <img class="photo-profile" src="/img/diogo-profile.jpg" alt="Diogo Moretti" />
+        </a>
+    </h1>
+    <h2 class="name-user">
+        <a class="name-user-link" href="/index.html"><%= config.author %></a>
+    </h2>
+    <span class="desc-user"><%= config.subtitle %></span>
+    <ul id="nav">
+        <li class="nav-item"><a class="nav-link" href="/about">About</a></li>
+        <li class="nav-item"><a class="nav-link<% if (path == ""){ %> active<% } %>" href="/">Blog</a></li>
+        <li class="nav-item"><a class="nav-link<% if (path == "projects/index.html" || layout == "post"){ %> active<% } %>" href="/projects">Projects</a></li>
+        <li class="nav-item"><a class="nav-link" href="/contact">Contact</a></li>
+    </ul>
+    <ul id="social">
+        <li class="nav-social-item"><a class="nav-social-link icon-facebook-squared" href="#"><span class="name-social">Facebook</span></a></li>
+        <li class="nav-social-item"><a class="nav-social-link icon-twitter-squared" href="#"><span class="name-social">Twitter</span></a></li>
+        <li class="nav-social-item"><a class="nav-social-link icon-gplus-squared" href="#"><span class="name-social">Google Plus</span></a></li>
+        <li class="nav-social-item"><a class="nav-social-link icon-github-squared" href="#"><span class="name-social">Github</span></a></li>
+        <li class="nav-social-item"><a class="nav-social-link icon-linkedin-squared" href="#"><span class="name-social">Linkedin</span></a></li>
+    </ul>
+</header>

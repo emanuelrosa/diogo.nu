@@ -1,0 +1,134 @@
+::selection
+  background: color-primary
+  color: white
+
+-moz-::selection
+  background: color-primary
+  color: white
+
+*
+  box-sizing: border-box
+  transition: all .2s ease-in
+
+body
+  background: color-background
+  color: color-font
+  font-family: font-default
+  font-size: 14px
+  text-shadow: 0 0 1px transparent
+  @media screen and (max-width: 1260px)
+    margin: 0 30px
+  @media screen and (max-width: 600px)
+    font-size: 13px
+
+h1, h2, h3, h4, h5, h6
+  font-family font-title
+
+h1
+  font-size 1.8em
+
+h2
+  font-size 1.5em
+
+h3
+  font-size 1.3em
+
+a
+  text-decoration none
+  color color-link
+  &:hover
+    text-decoration underline
+
+.alignleft
+  float left
+
+.alignright
+  float right
+
+.clearfix
+  clearfix()
+
+.inner
+  width page-width
+  margin 0 auto
+  @media screen and (max-width: 1260px)
+    width 100%
+
+#main-col
+  width 900px
+  @media screen and (max-width: 1260px)
+    width 100%
+    margin-right -300px
+  @media screen and (max-width: 900px)
+    margin-right 0
+    float none
+
+#wrapper
+  @media screen and (max-width: 1260px)
+    margin-right 300px
+  @media screen and (max-width: 900px)
+    margin-right 0
+
+
+// Structure
+#header
+  background: color-primary
+  position: fixed
+  width: 250px
+  float: left
+  top: 0
+  left: 0
+  bottom: 0
+  padding: 10px 20px
+  z-index: 10
+  text-align: center
+
+#main
+  position: relative
+  max-width: 1500px
+  padding: 4em 4em 4em 290px
+  background: #fff
+
+
+// Nav's
+#nav
+  list-style: none
+  padding: 0
+  text-align: center
+  display: table
+  .nav-item
+    width: 100%
+    display: block
+    float: left
+    .nav-link
+      padding: .5em
+      display: block
+      width: 85%
+      color: darken(white, 4%)
+      font-size: 1em
+      text-decoration: none
+      border-radius: 3px
+      margin: 2px auto
+      &:hover, &.active
+        color: white
+        background: darken(color-primary, 4%)
+
+#social
+  list-style: none
+  display: table
+  text-align: center
+  padding: 0
+  margin: 1.4em auto
+  .nav-social-item
+    display: inline-block
+    .nav-social-link
+      font-size: 1.5em
+      color: darken(color-primary, 10%)
+      text-decoration: none
+      text-align: center
+      display: block
+      &:hover
+        color: white
+      .name-social
+        display: none
+        visibility: hidden

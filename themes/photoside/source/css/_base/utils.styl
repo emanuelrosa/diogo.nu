@@ -1,0 +1,43 @@
+.photo-profile
+  border-radius: 50%
+
+.name-user-link
+  color: color-font
+
+// Buttons
+.btn
+  display: inline-block
+  padding: .7em 1.2em
+  background: color-border
+  border: none
+  border-radius: 3px
+  margin: .6em .6em .6em 0
+  &:hover
+    background: darken(color-border, 10%)
+  &.btn-primary
+    background: color-primary
+    color: white !important
+    &:hover
+      background: darken(color-primary, 7%)
+  &.btn-info
+    background: color-link
+    color: white !important
+    &:hover
+      background: darken(color-link, 7%)
+  &.btn-success
+    background: bg_btn_success
+    color: white !important
+    &:hover
+      background: darken(bg_btn_success, 15%)
+  &.btn-small
+    font-size: .8em
+    padding: .4em .9em
+    vertical-align: center
+  &.btn-radius
+    border-radius: .5em
+  &.btn-link
+    background: none
+    color: color-link
+    &:hover
+      color: darken(color-link, 25%)
+      text-decoration: underline

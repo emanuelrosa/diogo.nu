@@ -1,0 +1,218 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 52.0,
+		"selected_items":
+		[
+			[
+				"install",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 543.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+			"import urllib.request,os; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); open(os.path.join(ipp, pf), 'wb').write(urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ','%20')).read())"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/diogomoretti/Projects/www2.diogo.nu/www/_config.yml",
+		"/Users/diogomoretti/Projects/www2.diogo.nu/www/themes/photoside/layout/_partial/header.ejs",
+		"/Users/diogomoretti/Projects/www.diogomoretti.com/website/src/documents/styles/style.css.stylus",
+		"/Users/diogomoretti/Projects/www2.diogo.nu/www/themes/photoside/layout/_partial/main.ejs",
+		"/Users/diogomoretti/Projects/www2.diogo.nu/www/themes/photoside/layout/layout.ejs",
+		"/Users/diogomoretti/Projects/www2.diogo.nu/www/themes/photoside/layout/_partial/article.ejs",
+		"/Users/diogomoretti/Projects/www2.diogo.nu/www/themes/photoside/source/css/_base/layout.styl",
+		"/Users/diogomoretti/Projects/www2.diogo.nu/www/themes/photoside/source/css/_base/utils.styl",
+		"/Users/diogomoretti/Projects/www2.diogo.nu/www/themes/photoside/source/css/_base/variable.styl",
+		"/Users/diogomoretti/Projects/www2.diogo.nu/www/themes/photoside/source/css/style.styl",
+		"/Users/diogomoretti/Projects/www2.diogo.nu/www/themes/photoside/source/css/_base/fonts.styl",
+		"/Users/diogomoretti/Projects/www2.diogo.nu/www/themes/photoside/layout/_partial/head.ejs",
+		"/Users/diogomoretti/Projects/www.diogomoretti.com/website/src/files/vendor/fonts.css",
+		"/Users/diogomoretti/Projects/www2.diogo.nu/www/source/projects/index.md",
+		"/Users/diogomoretti/Projects/www2.diogo.nu/www/themes/photoside/layout/page.ejs",
+		"/Users/diogomoretti/Projects/www2.diogo.nu/www/scaffolds/page.md",
+		"/Users/diogomoretti/Projects/www2.diogo.nu/www/source/_posts/hello-world.md",
+		"/Users/diogomoretti/Projects/www2.diogo.nu/www/source/_posts/post-inicial.md",
+		"/Users/diogomoretti/Projects/www2.diogo.nu/www/themes/photoside/source/css/_partial/header.styl",
+		"/Users/diogomoretti/Projects/www2.diogo.nu/www/themes/photoside/source/css/_partial/main.styl",
+		"/Users/diogomoretti/Projects/www2.diogo.nu/www/themes/light/source/css/style.styl",
+		"/Users/diogomoretti/Projects/www2.diogo.nu/www/themes/photoside/source/css/_partial/sidebar.styl",
+		"/Users/diogomoretti/Projects/www2.diogo.nu/www/themes/photoside/source/css/_vendor/normalize.styl",
+		"/Users/diogomoretti/Projects/www2.diogo.nu/www/themes/photoside/layout/_partial/archive.ejs",
+		"/Users/diogomoretti/Projects/www2.diogo.nu/www/themes/photoside/layout/_partial/pagination.ejs",
+		"/Users/diogomoretti/Projects/www2.diogo.nu/www/themes/photoside/layout/_partial/after_footer.ejs",
+		"/Users/diogomoretti/Projects/www.diogomoretti.com/website/src/layouts/default.html.eco",
+		"/Users/diogomoretti/Projects/www2.diogo.nu/www/package.json",
+		"/Users/diogomoretti/Projects/www2.diogo.nu/www/themes/light/layout/_partial/header.ejs",
+		"/Users/diogomoretti/Projects/www2.diogo.nu/www/themes/light/layout/_partial/head.ejs",
+		"/Users/diogomoretti/Projects/www2.diogo.nu/www/themes/light/source/css/_partial/syntax.styl",
+		"/Users/diogomoretti/Projects/www2.diogo.nu/www/themes/light/source/css/_partial/index.styl",
+		"/Users/diogomoretti/Projects/www2.diogo.nu/www/themes/light/source/css/_partial/archive.styl",
+		"/Users/diogomoretti/Projects/www2.diogo.nu/www/themes/light/source/css/_base/variable.styl",
+		"/Users/diogomoretti/Projects/www2.diogo.nu/www/themes/light/source/css/_base/utils.styl",
+		"/Users/diogomoretti/Projects/www2.diogo.nu/www/themes/light/source/css/_base/layout.styl",
+		"/Users/diogomoretti/Projects/www2.diogo.nu/www/themes/light/layout/layout.ejs",
+		"/Users/diogomoretti/Projects/www2.diogo.nu/www/scaffolds/photo.md",
+		"/Users/diogomoretti/Projects/www2.diogo.nu/www/themes/light/layout/index.ejs",
+		"/Users/diogomoretti/Projects/www2.diogo.nu/www/themes/light/layout/category.ejs",
+		"/Users/diogomoretti/Projects/www.diogo.nu/Gruntfile.js",
+		"/Users/diogomoretti/.bash_profile",
+		"/Users/diogomoretti/Projects/www.diogo.nu/app/templates/layouts/default.hbs",
+		"/Users/diogomoretti/Projects/www.diogo.nu/app/templates/pages/index.hbs",
+		"/Users/diogomoretti/Projects/www.diogo.nu/app/styles/main.css",
+		"/Users/diogomoretti/Projects/www.diogo.nu/bower.json",
+		"/Users/diogomoretti/Projects/www.diogo.nu/app/templates/pages/404.hbs",
+		"/Users/diogomoretti/Projects/www.frontinfloripa.com.br/www/frontinfloripa2013/src/partials/nav.html.eco",
+		"/Users/diogomoretti/Projects/www.frontinfloripa.com.br/www/frontinfloripa2013/src/layouts/default.html.eco",
+		"/Users/diogomoretti/Projects/www.frontinfloripa.com.br/www/frontinfloripa2013/package.json",
+		"/Users/diogomoretti/Projects/www.frontinfloripa.com.br/www/frontinfloripa2013/Gruntfile.js",
+		"/Users/diogomoretti/Projects/www.frontinfloripa.com.br/www/frontinfloripa2013/.ftppass",
+		"/Users/diogomoretti/Projects/www.frontinfloripa.com.br/www/frontinfloripa2013/src/partials/section/partners.html.eco",
+		"/Users/diogomoretti/Projects/www.frontinfloripa.com.br/www/frontinfloripa2013/docpad.js",
+		"/Users/diogomoretti/Projects/www.frontinfloripa.com.br/www/frontinfloripa2013/src/partials/section/patrocinio.html.eco",
+		"/Users/diogomoretti/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/Users/diogomoretti/Library/Application Support/Sublime Text 3/Packages/SideBarEnhancements/CHANGELOG",
+		"/Users/diogomoretti/Documents/www.frontinfloripa.com.br/www/frontinfloripa2013/docpad.js",
+		"/Users/diogomoretti/Documents/www.frontinfloripa.com.br/www/frontinfloripa2013/src/layouts/default.html.eco",
+		"/Users/diogomoretti/Documents/www.frontinfloripa.com.br/www/frontinfloripa2013/src/partials/section/location.html.eco",
+		"/Users/diogomoretti/Documents/www.frontinfloripa.com.br/www/frontinfloripa2013/src/partials/section/schedule.html.eco",
+		"/Users/diogomoretti/Documents/www.frontinfloripa.com.br/www/frontinfloripa2013/src/partials/section/ingresso.html.eco",
+		"/Users/diogomoretti/Documents/www.frontinfloripa.com.br/www/frontinfloripa2013/src/documents/themes/frontinfloripa/css/theme.less"
+	],
+	"find":
+	{
+		"height": 0.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 23.0
+	},
+	"input":
+	{
+		"height": 34.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"project": "www2.diogo.nu.sublime-project",
+	"replace":
+	{
+		"height": 0.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 190.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
