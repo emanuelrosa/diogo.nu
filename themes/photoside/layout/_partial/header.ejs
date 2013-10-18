@@ -1,13 +1,13 @@
 <header id="header">
-    <h1 class="logo">
+    <h1 class="user-logo">
         <a href="/">
             <img class="photo-profile" src="/img/diogo-profile.jpg" alt="Diogo Moretti" />
         </a>
     </h1>
-    <h2 class="name-user">
-        <a class="name-user-link" href="/index.html"><%= config.author %></a>
+    <h2 class="user-name">
+        <a class="user-name-link" href="/index.html"><%= config.author %></a>
     </h2>
-    <span class="desc-user"><%= config.subtitle %></span>
+    <p class="user-desc"><%= config.subtitle %></p>
     <ul id="nav">
         <li class="nav-item"><a class="nav-link" href="/about">About</a></li>
         <li class="nav-item"><a class="nav-link<% if (path == ""){ %> active<% } %>" href="/">Blog</a></li>

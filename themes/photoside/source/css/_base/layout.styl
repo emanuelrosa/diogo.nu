@@ -1,8 +1,4 @@
-::selection
-  background: color-primary
-  color: white
-
--moz-::selection
+-moz-::selection, ::selection
   background: color-primary
   color: white
 
@@ -14,7 +10,7 @@ body
   background: color-background
   color: color-font
   font-family: font-default
-  font-size: 14px
+  font-size: 62.5%
   text-shadow: 0 0 1px transparent
   @media screen and (max-width: 1260px)
     margin: 0 30px
@@ -22,59 +18,51 @@ body
     font-size: 13px
 
 h1, h2, h3, h4, h5, h6
-  font-family font-title
+  font-family: font-title
+  line-height: 1.3em
+  margin: .4em 0
 
 h1
-  font-size 1.8em
+  font-size: 3.8em
 
 h2
-  font-size 1.5em
+  font-size: 3.2em
 
 h3
-  font-size 1.3em
+  font-size: 2.8em
 
-a
-  text-decoration none
-  color color-link
-  &:hover
-    text-decoration underline
+h4
+  font-size: 2.4em
 
-.alignleft
-  float left
+h5
+  font-size: 2em
 
-.alignright
-  float right
+h6
+  font-size: 1.7em
+
+p, ul
+  font-size: 1.6em
+  line-height: 1.8em
+
+p
+  font-family: font-default
+  color: color-font
+  a
+    color: black
+    border-bottom: 1px solid #eee
+    text-decoration: none
+    &:hover
+      border-color: #aaa
 
 .clearfix
   clearfix()
 
-.inner
-  width page-width
-  margin 0 auto
-  @media screen and (max-width: 1260px)
-    width 100%
 
-#main-col
-  width 900px
-  @media screen and (max-width: 1260px)
-    width 100%
-    margin-right -300px
-  @media screen and (max-width: 900px)
-    margin-right 0
-    float none
-
-#wrapper
-  @media screen and (max-width: 1260px)
-    margin-right 300px
-  @media screen and (max-width: 900px)
-    margin-right 0
-
-
-// Structure
+///////==== Structure
 #header
   background: color-primary
   position: fixed
-  width: 250px
+  width: 300px
   float: left
   top: 0
   left: 0
@@ -86,16 +74,17 @@ a
 #main
   position: relative
   max-width: 1500px
-  padding: 4em 4em 4em 290px
+  padding: 4em 4em 4em 340px
   background: #fff
 
 
-// Nav's
+///////==== Navigations
 #nav
   list-style: none
   padding: 0
   text-align: center
   display: table
+  margin: 1em auto
   .nav-item
     width: 100%
     display: block
