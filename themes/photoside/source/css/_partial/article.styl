@@ -4,177 +4,84 @@ icon-gap = 25px
 ///////==== Articles
 
 article
-  box-shadow 1px 1px 3px #eee
-  background #fff
-  &.page
-    padding-left 20px
-    .icon
-      display none
-
+  margin-bottom: 2em
+  position: relative
+  
   &.post
-    .icon
-      &:before
-        content '\f016'
+    &:after
+      position: absolute
+      width: 1em
+      height: 1em
+      display: block
+      background: #000
+      margin: 0 auto
+      top: 20px
+      left: 500px
 
-  &.photo
-    .icon
-      &:before
-        content '\f030'
-
-  &.link
-    .icon
-      &:before
-        content '\f0c1'
-
-    .title
-      a
-        &:after
-          content '\f08e'
-          color color-meta
-          font 12px font-icon
-          padding-left 10px
-          vertical-align super
-
-  .post-content
-    padding 20px 20px 15px (icon-size + icon-gap + 20)
-    margin-bottom 50px
-    position relative
-    @media screen and (max-width: 600px)
-      padding-left 20px
-
-  .gallery
-    overflow hidden
-    position relative
-    &:hover
-      .control
-        opacity 1
-
-    img
-      min-width 100%
-      max-width 100%
-      height auto
-      position absolute
-      top 0
-      left 0
-      opacity 0
-
-    .control
-      opacity 0
-      transition 0.3s
-
-    .prev, .next
-      position absolute
-      top 0
-      width 50%
-      height 100%
-      cursor pointer
-      &:before
-        position absolute
-        font 24px/1 font-icon
-        text-align center
-        width 24px
-        text-shadow 0 0 15px rgba(0,0,0,0.5)
-        color #fff
-        margin-top -12px
-        top 50%
-
-    .prev
-      left 0
-      &:before
-        content '\f053'
-        left 10px
-
-    .next
-      right 0
-      &:before
-        content '\f054'
-        right 10px
-
+  // Header post
   header
-    .icon
-      width icon-size
-      height icon-size
-      margin-right icon-gap
-      position absolute
-      top 20px
-      left 20px
-      color color-border
-      @media screen and (max-width: 600px)
-        display none
-      &:before
-        position absolute
-        font 32px font-icon    
-        top 0
-        left 0 
-        width 32px
-        text-align center
-
-    time
-      color color-meta
-      font 0.9em font-title
-      margin-bottom 5px
-      display block
-      line-height 1
-
+    position: relative
+    .date-item
+      color: color-meta
+      margin-bottom: 5px
+      display: block
+      line-height: 1
+      position: absolute
+      left: -9em
+      top: 2.5em
+      padding: .5em .6em
+      background: #eee
+      .link-time-item
+        text-decoration: none
+        font-size: 1.2em
+        color: #666
     .title
-      font-weight normal
+      font-weight: normal
+      border-bottom: 1px solid #eee
+      display: inline-block
       a
-        color color-font
+        color: color-font
+        text-decoration: none
         &:hover
-          color color-link
-          text-decoration none
-
+          color: color-primary
+  
+  // Post
   .entry
-    text-align justify
     line-height 1.6
-    p, blockquote, ul, ol, dl, table, iframe, h3, h4, h5, h6, .video-container
-      margin-top 15px
+    blockquote, ul, ol, dl, table, iframe, h3, h4, h5, h6, .video-container
+      margin-top: 1.5em
+    p
+      margin-bottom: 1.2em
 
     blockquote
-      border-top 1px solid color-border
-      border-bottom 1px solid color-border
-      font-style italic
-      font-family font-serif
-      font-size 1.2em
-      padding 0 30px 15px
-      text-align center
-      footer
-        border-top none
-        font-size 0.8em
-        line-height 1
-        margin 20px 0 0
-        padding-top 0
-        cite
-          &:before
-            content '—'
-            color #ccc
-            padding 0 0.5em
+      font-size: 1.5em
+      line-height: 1.8em
+      color: #aaa
+      margin: 2.8em 3em 1.5em 3em
+      cite
+        display: table
+        color: #666
+        margin-top: .4em
+        border-bottom: 1px dashed #eee
+      &:before
+        content: "\201C"
+        position: absolute
+        font-size: 5em
+        margin-left: -.58em
+        margin-top: .3em
+        font-family: "Georgia", Times, serif
 
     code, pre
-      font-family font-mono
+      font-family: font-mono
 
     code
-      background #eee
-      color #666
-      padding 0 5px
-      margin 0 2px
-      font-size 0.9em
-      border 1px solid color-border
-      border-radius 3px
-
-    pre
-      background #eee
-      border 1px solid color-border
-      margin-top 15px
-      overflow auto
-      padding 7px 15px
-      border-radius 2px
-      code
-        background none
-        padding 0
-        margin 0
-        border none
-        border-radius 0
+      background: sh-bg
+      color: sh-text
+      padding: 1px 6px
+      margin: 0 2px
+      font-size: 0.9em
+      border: 1px solid darken(sh-bg, 10%)
+      border-radius: 3px
 
     ul, ol, dl
       margin-left 20px
@@ -214,18 +121,18 @@ article
         top 3px
 
     .video-container
-      position relative
-      padding-bottom 56.25%
-      padding-top 30px
-      height 0
-      overflow hidden
+      position: relative
+      padding-bottom: 56.25%
+      padding-top: 30px
+      height: 0
+      overflow: hidden
       iframe, object, embed
-        position absolute
-        top 0
-        left 0
-        width 100%
-        height 100%
-        margin-top 0
+        position: absolute
+        top: 0
+        left: 0
+        width: 100%
+        height: 100%
+        margin-top: 0
 
     .pullquote
       float right
@@ -237,53 +144,73 @@ article
       font-size 1.5em
 
   footer
-    margin-top 15px
-    padding-top 10px
-    border-top 1px solid color-border
-    color color-meta
-    font-size 0.9em
-    line-height 16px
-    position relative
-    min-height 16px
+    color: #999
+    font-size: 0.9em
+    line-height: 16px
+    position: relative
+    min-height: 16px
+    &.footer-inner
+      padding: 1em .4em 1.4em 2.5em
+      margin: 3em 0 1em 0
+      background: lighten(#f5f5f5, 70%)
+      box-shadow: 0 3px 0 #eee
+      //border-left: .5em solid color-primary
     a
-      color color-meta
+      color: color-meta
       &:hover
-        color color-link
-        text-decoration none
+        color: color-link
+        text-decoration: none
       &:before
-        font 1.1em font-icon
-        padding-right 10px
-        vertical-align middle
+        font: 1.1em font-icon
+        padding-right: 10px
+        vertical-align: middle
 
       &.more-link
         &:before
-          content '\f054'
+          content: '\f054'
 
       &.comment-link
         &:before
-          content '\f075'
+          content: '\f075'
 
-    .categories, .tags
-      position relative
-      padding-left 25px
-      margin 5px 0
+    .categories, .tags, .author, .time
+      position: relative
+      padding-left: 25px
+      margin: .5em 2em 0 0
+      display: inline-block
+      a
+        font-size: 1.6em
+        margin-left: 3px
+        text-decoration: none
       &:before
-        position absolute
-        font 1.1em font-icon
+        position: absolute
+        font: 2em font-icon
 
     .categories
       &:before
-        content '\f07b'
-        top 2px
-        left 1px
+        content: '\f07b'
+        top: 1px
+        left: 0
+
+    .author
+      &:before
+        content: '\f007'
+        top: 1px
+        left: 5px
+
+    .time
+      &:before
+        content: '\f017'
+        top: 1px
+        left: 5px
 
     .tags
       &:before
-        content '\f02b'
-        top 3px
-        left 2px
+        content: '\f02b'
+        top: 1px
+        left: 5px
 
     .addthis
-      margin-top 15px
+      margin-top: 15px
       iframe
-        margin-top 0
+        margin-top: 0

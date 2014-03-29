@@ -1,21 +1,17 @@
 -moz-::selection, ::selection
   background: color-primary
-  color: white
+  color: #FFF
 
 *
   box-sizing: border-box
-  transition: all .2s ease-in
+  //transition: all .1s linear
 
 body
-  background: color-background
+  background: #fff //color-background
   color: color-font
   font-family: font-default
   font-size: 62.5%
   text-shadow: 0 0 1px transparent
-  @media screen and (max-width: 1260px)
-    margin: 0 30px
-  @media screen and (max-width: 600px)
-    font-size: 13px
 
 h1, h2, h3, h4, h5, h6
   font-family: font-title
@@ -49,14 +45,32 @@ p
   color: color-font
   a
     color: black
-    border-bottom: 1px solid #eee
+    border-bottom: 1px solid #ccc
     text-decoration: none
+    background: lighten(#f5f5f5, 60%)
+    border-radius: 2px
+    padding: 0 .3em
+    //&[href^="http"]
+    //  &:after
+    //    @extend .fa
+    //    @extend .transition
+    //    content "\f08e"
+    //    margin: 0 0 0 .3em
+    //    color: #ccc          
     &:hover
-      border-color: #aaa
+      border-color: #999
+    &:hover:after
+      color: #999
 
+///////==== Helper class
 .clearfix
   clearfix()
 
+.alignleft
+  float: left
+
+.alignright
+  float: right
 
 ///////==== Structure
 #header
@@ -73,12 +87,29 @@ p
 
 #main
   position: relative
-  max-width: 1500px
-  padding: 4em 4em 4em 340px
-  background: #fff
+  max-width: page-width
+  padding: 4em 4em 4em 39em
+  background: color-background-main
 
+#comment
+  margin: 3em 0
+  .title
+    font-weight: normal
+    margin-bottom: 15px
+
+#pagination
+  margin-top: 1em
+
+#footer
+  color color-meta
+  margin-bottom 50px
+  font 0.9em/1.6 font-title
+  text-shadow 0 0 1px #fff
 
 ///////==== Navigations
+#menu
+  display: none
+
 #nav
   list-style: none
   padding: 0
@@ -99,6 +130,7 @@ p
       border-radius: 3px
       margin: 2px auto
       &:hover, &.active
+        @extend .transition
         color: white
         background: darken(color-primary, 4%)
 
@@ -112,11 +144,12 @@ p
     display: inline-block
     .nav-social-link
       font-size: 1.5em
-      color: darken(color-primary, 10%)
+      color: darken(color-primary, 15%)
       text-decoration: none
       text-align: center
       display: block
       &:hover
+        @extend .transition
         color: white
       .name-social
         display: none

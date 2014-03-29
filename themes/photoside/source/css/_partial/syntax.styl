@@ -34,100 +34,125 @@
             color color-link
 
 figure.highlight
-  background #eee
-  border 1px solid color-border
-  margin-top 15px
-  padding 7px 15px
-  border-radius 2px
-  text-shadow 0 0 1px #fff
-  line-height 1.6
-  overflow auto
-  position relative
-  font-size 0.9em
+  background: sh-bg
+  border: 1px solid darken(sh-bg, 10%)
+  margin-top: 15px
+  padding: 7px 15px
+  border-radius: 2px
+  line-height: 1.6
+  overflow: auto
+  position: relative
+  font-size: 1.2em
+  display: block
   figcaption
-    color color-meta
-    margin-bottom 5px
-    text-shadow 0 0 1px #fff
+    color: color-meta
+    margin-bottom: 5px
+    > span
+      border-bottom: 1px dotted lighten(sh-bg, 30%)
+      color: #fff
     a
-      position absolute
-      right 15px
+      position: absolute
+      right: 15px
 
   pre
-    border none
-    padding 0
-    margin 0
+    border: none
+    padding: 0
+    margin: 0
+    color: sh-text
 
   table
-    margin-top 0
-    border-spacing 0
+    margin-top: 0
+    border-spacing: 0
 
   .gutter
-    color color-meta
-    padding-right 15px
-    border-right 1px solid color-border
-    text-align right
+    color: color-meta
+    padding-right: 1.5em
+    border-right: 1px dotted #888
+    text-align: right
 
   .code
-    padding-left 15px
-    border-left 1px solid #fff
-    color #666
+    padding-left: 1.5em
+    color: sh-text
+    //width: 100%
 
+/*
+  Style with support for rainbow parens
+  http://softwaremaniacs.org/media/soft/highlight/test.html
+*/
 pre
-  // Theme: Solarized - Light
-  // More theme here: http://softwaremaniacs.org/media/soft/highlight/test.html
+  ::selection
+    background:#FF5E99; color:#fff; text-shadow: none
+
+  .body
+  .collection
+    color: #D1D9E1
+   
   .comment
   .template_comment
   .diff .header
   .doctype
-  .pi
   .lisp .string
-  .javadoc
-    color #93a1a1
-    font-style italic
-
+  .javadoc 
+    color: #969896
+    font-style: italic
+   
   .keyword
+  .clojure .attribute
   .winutils
-  .method
+  .javascript .title
   .addition
-  .css .tag
-  .request
-  .status
-  .nginx .title
-    color #859900
-
+  .css .tag 
+    color: #cc99cc
+   
   .number
+    color: #f99157
+   
   .command
   .string
   .tag .value
   .phpdoc
   .tex .formula
   .regexp
-  .hexcolor
-    color #2aa198
-
+  .hexcolor 
+    color: #8abeb7
+   
   .title
   .localvars
+  .function .title
   .chunk
   .decorator
   .built_in
+  .lisp .title
   .identifier
-  .vhdl
-  .literal
-  .id
-    color #268bd2
-
-  .attribute
+    color: #b5bd68
+   
+  .class .keyword
+    color: #f2777a
+   
   .variable
   .lisp .body
   .smalltalk .number
   .constant
   .class .title
   .parent
-  .haskell .type
-    color #b58900
-
+  .haskell .label
+  .id
+  .lisp .title
+  .clojure .title .built_in
+     color: #ffcc66
+   
+  .tag .title
+  .rules .property
+  .django .tag .keyword
+  .clojure .title .built_in
+    font-weight: bold
+   
+  .attribute
+  .clojure .title 
+    color: #81a2be
+   
   .preprocessor
-  .preprocessor .keyword
+  .pi
   .shebang
   .symbol
   .symbol .string
@@ -137,8 +162,10 @@ pre
   .important
   .subst
   .cdata
-  .clojure .title
-    color #cb4b16
-
+    color: #f99157
+   
   .deletion
-    color #dc322f
+    color: #dc322f
+   
+  .tex .formula
+    background: #eee8d5

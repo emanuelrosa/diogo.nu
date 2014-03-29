@@ -9,6 +9,17 @@ widgets:
 
 excerpt_link: Read More
 
+navigation:
+  next: Next
+  prev: Prev
+
+social:
+  facebook: diogombb
+  twitter: diogomoretti_
+  gplus: 103107201683495124181 #Google Plus ID. Ex.: 716271261726126761221
+  github: diogomoretti
+  linkedin: diogomoretti
+
 twitter:
   username:
   show_replies: false

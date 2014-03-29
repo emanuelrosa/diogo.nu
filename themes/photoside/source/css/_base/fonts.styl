@@ -1,51 +1,17 @@
-@font-face
-  font-family 'FengardoNeueRegular'
-  src url('../fonts/FengardoNeue_Regular-webfont.eot')
-  src url('../fonts/FengardoNeue_Regular-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/FengardoNeue_Regular-webfont.woff') format('woff'),
-         url('../fonts/FengardoNeue_Regular-webfont.ttf') format('truetype'),
-         url('../fonts/FengardoNeue_Regular-webfont.svg#FengardoNeueRegular') format('svg')
-  font-weight normal
-  font-style normal
+.fa
+  display: inline-block
+  color: darken(color-font, 10%)
+  font-family: 'FontAwesome'
+  font-style: normal
+  font-weight: normal
+  line-height: 1
+  margin-right: .8em
+  -webkit-font-smoothing: antialiased
+  -moz-osx-font-smoothing: grayscale
+  &.fa-white
+    color: white
 
-@font-face
-  font-family 'Open Sans'
-  src url('../fonts/OpenSans-Regular-webfont.eot')
-  src url('../fonts/OpenSans-Regular-webfont.eot?#iefix') format('embedded-opentype'),
-       url('../fonts/OpenSans-Regular-webfont.woff') format('woff'),
-       url('../fonts/OpenSans-Regular-webfont.ttf') format('truetype'),
-       url('../fonts/OpenSans-Regular-webfont.svg#OpenSansRegular') format('svg')
-  font-weight normal
-  font-style normal
-
-@font-face
-  font-family: 'icons'
-  src url('../fonts/icons.eot?30899942')
-  src url('../fonts/icons.eot?30899942#iefix') format('embedded-opentype'),
-      url('../fonts/icons.woff?30899942') format('woff'),
-      url('../fonts/icons.ttf?30899942') format('truetype'),
-      url('../fonts/icons.svg?30899942#icons') format('svg')
-  font-weight normal
-  font-style normal
-
-@font-face
-  font-family 'FontAwesome'
-  src url(font-icon-path.eot?#iefix) format('embedded-opentype'), 
-      url(font-icon-path.woff) format('woff'), 
-      url(font-icon-path.ttf) format('truetype'), 
-      url(font-icon-path.svg#FontAwesomeRegular) format('svg')
-  font-style normal
-  font-weight normal
-
-@media screen and (-webkit-min-device-pixel-ratio:0)
-  @font-face
-    font-family: 'FengardoNeueRegular'
-    src: url('../fonts/FengardoNeue_Regular-webfont.svg#FengardoNeueRegular') format('svg')
-  @font-face
-    font-family: 'icons'
-    src: url('../fonts/icons.svg?30899942#icons') format('svg')
-
-[class^="icon-"]:before, [class*=" icon-"]:before
+[class^="icon-"]:before, [class*=" icon-"]:before, .icone-class
   font-family "icons"
   font-style normal
   font-weight normal
@@ -111,3 +77,9 @@
 .icon-link
   &:before
     content '\e809'
+
+.fa-github:before
+  content: "\f09b"
+
+.fa-share:before
+  content: "\f064"

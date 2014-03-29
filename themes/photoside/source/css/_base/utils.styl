@@ -1,56 +1,156 @@
+
+// Header Misc
 .photo-profile
   border-radius: 50%
+  border: 5px solid rgba(darken(color-primary, 15%), 0.5)
 
 .user-logo
   margin-bottom: 0
 
 .user-name
   margin: 0
+  text-transform: uppercase
+  font-size: 2.5em
 
 .user-desc
   font-size: 1.4em
   margin-top: 0
+  color: color-meta
 
 .user-name-link
-  color: darken(color-font, 25%)
+  color: darken(#fff, 1%)
   text-decoration: none
+  text-shadow: 0 2px 0 darken(color-primary, 15%)
   &:hover
-    color: darken(color-font, 10%)
+    color: darken(#fff, 5%)
 
 // Buttons
 .btn
   display: inline-block
-  padding: .7em 1.2em
-  background: color-border
+  padding: .5em 1.4em
   border: none
   border-radius: 3px
   margin: .6em .6em .6em 0
+  text-decoration: none
+  font-size: .9em
+  color: color-link
+  make-btn(color-border)
+  position: relative
   &:hover
-    background: darken(color-border, 10%)
+    @extend .transition
+    make-btn-hover(color-border)
+
+  &:active
+    transition: none
+    top: (btn-size-shadow + 0px)
+    box-shadow: none !important
+
   &.btn-primary
-    background: color-primary
-    color: white !important
+    color: white
+    make-btn(color-primary)
     &:hover
-      background: darken(color-primary, 7%)
+      make-btn-hover(color-primary)
+
   &.btn-info
-    background: color-link
-    color: white !important
+    color: white
+    make-btn(btn-bg-info)
     &:hover
-      background: darken(color-link, 7%)
+      make-btn-hover(btn-bg-info)
+
   &.btn-success
-    background: btn-bg-success
-    color: white !important
+    color: white
+    make-btn(btn-bg-success)
     &:hover
-      background: darken(btn-bg-success, 15%)
+      make-btn-hover(btn-bg-success)
+  
+  // Social buttons
+  &.btn-social
+    color: white
+    font-size: 1.2em
+    width: 2.8em
+    overflow: hidden
+    transition: width .5s ease-in-out
+    .social-icon
+      position: absolute
+      top: 1px
+      left: 5px
+      font-size: 1.5em
+    span
+      margin-left: 1.8em
+    &:hover
+      width: 10em
+
+  &.btn-facebook
+    color-base-facebook = #3b589e
+    make-btn(color-base-facebook)
+    &:hover
+      width: 8.8em
+      make-btn-hover(color-base-facebook)
+
+  &.btn-github
+    color-base-github = #777
+    make-btn(color-base-github)
+    &:hover
+      make-btn-hover(color-base-github)
+
+  &.btn-twitter
+    color-base-twitter = #5eaade
+    make-btn(color-base-twitter)
+    &:hover
+      width: 10.5em
+      make-btn-hover(color-base-twitter)
+
+  &.btn-linkedin
+    color-base-linkedin = #1a85bd
+    make-btn(color-base-linkedin)
+    &:hover
+      make-btn-hover(color-base-linkedin)
+
+  &.btn-gplus
+    color-base-plus = #dd4c39
+    make-btn(color-base-plus)
+    &:hover
+      make-btn-hover(color-base-plus)
+
   &.btn-small
-    font-size: .8em
+    font-size: .9em
     padding: .4em .9em
     vertical-align: center
+
   &.btn-radius
     border-radius: .5em
+
   &.btn-link
     background: none
-    color: color-link
+    color: btn-bg-info
+    box-shadow: none
     &:hover
-      color: darken(color-link, 25%)
+      top: 0
+      color: darken(btn-bg-info, 25%)
       text-decoration: underline
+    &:active
+      top: 0
+
+  &.btn-more
+    font-size: 1.5em
+    padding: .7em 1.2em
+
+// Pagination
+.btn-navigate
+  text-decoration: none
+  background: none
+  color: darken(color-border, 20%)
+  font-size: 2em
+  text-transform: uppercase
+  &:hover
+    color: darken(color-border, 60%)
+  &.prev
+    &:before
+      content: '\f053'
+      padding-right: 10px
+      font-family: font-icon
+  &.next
+    &:after
+      content: '\f054'
+      padding-left: 10px
+      font-family: font-icon

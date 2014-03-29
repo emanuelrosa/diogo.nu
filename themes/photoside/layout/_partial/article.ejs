@@ -5,8 +5,7 @@
   <div class="post-content">
     <header>
       <% if (item.layout != 'page'){ %>
-        <div class="icon"></div>
-        <time datetime="<%= item.date.toDate().toISOString() %>"><a href="<%- config.root %><%- item.path %>"><%= item.date.format(config.date_format) %></a></time>
+        <time class="date-item" datetime="<%= item.date.toDate().toISOString() %>"><a class="link-time-item" href="<%- config.root %><%- item.path %>"><%= item.date.format(config.date_format) %></a></time>
       <% } %>
       <%- partial('post/title') %>
     </header>
@@ -17,26 +16,26 @@
         <%- item.content %>
       <% } %>
     </div>
-    <footer>
+    <% if (item.layout == 'post' || index) { %>
+    <footer <% if (index == false){ %>class="footer-inner"<% } %>>
       <% if (index){ %>
         <% if (item.excerpt){ %>
-          <div class="alignleft">
-            <a href="<%- config.root %><%- item.path %>#more" class="more-link"><%= theme.excerpt_link %></a>
-          </div>
+        <a href="<%- config.root %><%- item.path %>#more" class="btn btn-more"><%= theme.excerpt_link %></a>
         <% } %>
         <% if (item.comment && config.disqus_shortname){ %>
-        <div class="alignright">
-          <a href="<%- item.permalink %>#disqus_thread" class="comment-link">Comments</a>
-        </div>
+        <a href="<%- item.permalink %>#disqus_thread" class="btn">Comments</a>
         <% } %>
       <% } else { %>
+        <%- partial('post/metadata') %>
         <%- partial('post/category') %>
         <%- partial('post/tag') %>
         <%- partial('post/share') %>
       <% } %>
       <div class="clearfix"></div>
     </footer>
+    <% } %>
   </div>
 </article>
-
+<% if (item.layout == 'post') { %>
 <%- partial('comment') %>
+<% } %>

@@ -1,0 +1,143 @@
+// Projects page
+
+project-item-photo  = 12em
+project-item-radius = 50%
+caret-filter-size   = 6px
+
+.inactive
+  display: none !important
+
+.projects-filter
+  padding: 0 !important
+  margin: 1em 0 2em !important
+  > li
+    display: inline-block
+    list-style: none
+
+.project-filter-item
+  margin: .5em 1em
+  padding: 0
+  cursor: pointer
+  position: relative
+
+.project-active
+  border-bottom: 3px solid color-border
+  &:after
+    content: ' '
+    width: 0 
+    height: 0
+    border-left: caret-filter-size solid transparent
+    border-right: caret-filter-size solid transparent
+    border-top: caret-filter-size solid color-border
+    position: absolute
+    bottom: -8px
+    left: 45%
+  &[data-filter='all']
+    &:after
+      left: 16%
+  &[data-filter='open-source']
+    border-color: color-project-open-source
+    &:after
+      border-top-color: color-project-open-source
+  &[data-filter='community']
+    border-color: color-project-community
+    &:after
+      border-top-color: color-project-community
+  &[data-filter='website']
+    border-color: color-project-website
+    &:after
+      border-top-color: color-project-website
+
+.project-filter-title
+  color: color-meta
+  font-size: .9em
+  text-transform: uppercase
+
+.projects
+  display: table
+  width: 100%
+  margin-top: 1em
+
+.project-item
+  display: inline-block
+  position: relative
+  padding: 0 3em 0 (project-item-photo + 2)
+  width: 45%
+  height: auto
+  margin: 1em 2em 5em 0
+  vertical-align: top
+  &:hover
+    .project-photo
+      border-width: 7px
+      border-style: solid
+      border-color: color-primary
+  &:after
+    content: 'Uncategorized'
+    transform: rotate(-30deg)
+    position: absolute
+    width: 8em
+    left: -.5em
+    top: .5em
+    border-radius: 4px
+    color: #fff
+    text-align: center
+    font-size: 1em
+    text-transform: uppercase
+    padding: .4em
+  &.community
+    &:after
+      content: 'Community'
+      background: color-project-community
+    &:hover
+      .project-photo
+        border-color: color-project-community
+  &.open-source
+    &:after
+      content: 'Open-Source'
+      background: color-project-open-source
+    &:hover
+      .project-photo
+        border-color: color-project-open-source
+  &.website
+    &:after
+      content: 'Website'
+      background: color-project-website
+    &:hover
+      .project-photo
+        border-color: color-project-website
+  
+  .project-photo-wrapper
+    max-width: project-item-photo
+    height: project-item-photo
+    position: absolute
+    top: 0
+    left: 0
+    border-radius: 10px
+
+  .project-overlay
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    border-radius: project-item-radius
+
+  .project-photo
+    max-width: 100%
+    height: auto
+    border-radius: project-item-radius
+    border: 5px solid darken(#fff, 5%)
+
+  .project-title
+    color: color-primary
+    font-size: 2.6em
+    border: none
+    margin: 0 0 -.5em 0
+
+  .project-description
+    margin: 0 0 .5em 0
+    font-size: 1.4em
+
+  .project-more
+    .btn
+      font-size: 1.2em
