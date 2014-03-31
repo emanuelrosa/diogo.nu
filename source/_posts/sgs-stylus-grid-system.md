@@ -40,8 +40,17 @@ Foi com base na "língua" que a muito tempo venho utilizando o [Semantic.gs](htt
 
 ## SGS
 
-O **SGS** é um *fork* do Semantic.gs, com várias variáveis de configuração e algumas outras features. Fiz um pequeno hotsite e assim como o grid, a documentação estará em constante desenvolvimento. Abaixo você pode acessar o site e conferir esse grid.
+O **SGS** é um *fork* do Semantic.gs, com várias variáveis de configuração e algumas outras features, dentre elas:
 
-Ahh, encontrou algum erro ou quer colaborar com novas funcionalidades? Dê um *fork*, *pull request* ou abra uma issue no Gitihub.
+- Fluído
+- Responsivo já com a definição dos breakpoints
+- Box-sizing: border-box aplicado globalmente (*)
+- Semântico e Não-Semântico
+- Variáveis de configuração (espaçamento, *padding*...)
+
+
+Fiz um pequeno hotsite e assim como o grid, a documentação estará em constante desenvolvimento. Abaixo você pode acessar o site e conferir esse grid.
+
+Ahh, encontrou algum erro ou quer colaborar com novas funcionalidades? Dê um *fork*, *pull request* ou abra uma issue no Github.
 
 <a href="http://diogomoretti.github.io/sgs/" class="btn btn-info"><i class="fa fa-share"></i>SGS - Stylus Grid System</a>
