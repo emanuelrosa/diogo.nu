@@ -3,13 +3,15 @@
 <head>
     <meta charset="utf-8">
     
-    <title>Diogo Moretti</title>
+    <title>SGS - Stylus Grid System | Diogo Moretti</title>
     <meta name="author" content="Diogo Moretti">
+    
+    <meta name="description" content="Hoje em dia existem muitos sistemas de grid. Mas cada um tem sempre alguma coisa que não gostamos.">
     
     
     <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" />
 
-    
+    <meta property="og:title" content="SGS - Stylus Grid System"/>
     <meta property="og:site_name" content="Diogo Moretti"/>
 
     
@@ -87,8 +89,7 @@
 </header>
   <section id="main">
   	
-
-  <article class="post">
+<article class="post">
   
     <div class="gallery">
   <div class="photoset">
@@ -109,7 +110,7 @@
       
       
   
-    <h1 class="title"><a href="/sgs-stylus-grid-system/">SGS - Stylus Grid System</a></h1>
+    <h1 class="title">SGS - Stylus Grid System</h1>
   
 
     </header>
@@ -121,15 +122,55 @@
     <div class="entry">
       
         <p>Hoje em dia existem muitos sistemas de grid. Mas cada um tem sempre alguma coisa que não gostamos.</p>
+<a id="more"></a>
+
+<p>Por isso resolvi criar meu próprio sistema de grid, escrito em <a href="http://learnboost.github.io/stylus/" target="_blank">Stylus</a>, meu pré-processador css favorito. Fiz ele todo fluído (não possui largura fixa) e também fiz opção de ser semântico ou não.</p>
+<h2 id="Semântico_x_Não-Semântico">Semântico x Não-Semântico</h2>
+<p>Essa discussão gera muitos comentários nas comunidades front-end. Para quem não sabe, o <strong>grid não-semântico</strong> é aquele que utiliza classe no html para criar o grid, por exemplo classes como span1, column3, grid2. Já o <strong>grid semântico</strong> é aquele que deixa a formatação do grid para o css, por exemplo: você põe uma classe chamada “sidebar”, e lá no css coloca as propriedades do grid dentro de “.sidebar”.</p>
+<p>Eu particularmente gosto muito de <strong>grids semânticos</strong>, pois concentro toda minha lógica no css. A questão de semântica não fica apenas em grid, na verdade ela é em todo o documento. Um HTML semântico não possui classes do tipo “box-right” ou “button-red”. Para uma boa escrita semântica, devemos colocar a <strong>função</strong> do elemento, e não sua posição ou cor, por exemplo.</p>
+<p>O assunto de semântica se estende também para o coreto uso das tags, acessibilidade com <a href="http://www.w3.org/WAI/intro/aria" target="_blank">WAI-ARIA</a> e <a href="https://schema.org/" target="_blank">Schema.org</a>. Mas isso fica para um próximo post.</p>
+<h2 id="Sistemas_de_grid">Sistemas de grid</h2>
+<p>Desde que sistemas de grid começaram a surgir, por volta de 2008, sempre utilizei. Utilizava na época o <a href="http://www.blueprintcss.org/" target="_blank">Blueprint</a>. Ele não é semântico, mas na época colocar duas colunas lado a lado com apenas uma classe era coisa de outro mundo.</p>
+<p>Todos os grids utilizavam o sistema não-semântico até a chegada dos pré-processadores css, em 2011. E assim se deu um boom de sistemas de grid na internet, cada um com sua peculiaridade.</p>
+<p>Hoje em dia você até se perde na hora de escolher um grid. Mas não adianta, mesmo aquele que mais te agradou sempre terá algo que você gostaria de melhorar ou até mesmo adicionar novas <em>features</em>. Por querer adicionar essas features, 90% dos grids hoje são feitos com algo pré-processador e claro, de código open-source no <a href="https://github.com" target="_blank">Github</a>.</p>
+<p>Como quase todo mundo utiliza pré-processador css, cada um escolhe o sistema de grid baseado na sua “língua”. Seja em <a href="http://learnboost.github.io/stylus/" target="_blank">Stylus</a>, <a href="http://sass-lang.com/" target="_blank">Sass</a>, <a href="http://lesscss.org/" target="_blank">Less</a> ou até mesmo em <a href="http://roole.org/" target="_blank">Roole</a>.</p>
+<p>Foi com base na “língua” que a muito tempo venho utilizando o <a href="http://semantic.gs" target="_blank">Semantic.gs</a>, na sua versão para o Stylus. Mas algumas coisas vinham me incomodando, além de não ter muitas variáveis de configuração. Foi adicionando algumas <em>features</em> que quando eu vi, eu estava com um sistema de grid bem diferente (nem tanto, pois o “make-grid” é o mesmo) do <em>default</em> do Semantic.gs.</p>
+<h2 id="SGS">SGS</h2>
+<p>O <strong>SGS</strong> é um <em>fork</em> do Semantic.gs, com várias variáveis de configuração e algumas outras features, dentre elas:</p>
+<ul>
+<li>Fluído</li>
+<li>Responsivo já com a definição dos breakpoints</li>
+<li>Box-sizing: border-box aplicado globalmente (*)</li>
+<li>Semântico e Não-Semântico</li>
+<li>Variáveis de configuração (espaçamento, <em>padding</em>…)</li>
+</ul>
+<p>Fiz um pequeno hotsite e assim como o grid, a documentação estará em constante desenvolvimento. Abaixo você pode acessar o site e conferir esse grid.</p>
+<p>Ahh, encontrou algum erro ou quer colaborar com novas funcionalidades? Dê um <em>fork</em>, <em>pull request</em> ou abra uma issue no Github.</p>
+<p><a href="http://diogomoretti.github.io/sgs/" class="btn btn-info" target="_blank"><i class="fa fa-share"></i>SGS - Stylus Grid System</a></p>
 
       
     </div>
     
-    <footer >
+    <footer class="footer-inner">
       
+        <div class="author">
+    <a href="/about">Diogo Moretti</a>
+</div>
+<div class="time">
+    <a href="http://diogo.nu/sgs-stylus-grid-system/">Mar 31 2014</a>
+</div>
         
-        <a href="/sgs-stylus-grid-system/#more" class="btn btn-more">Read More</a>
+  
+  <div class="categories">
+    <a href="/categories/project/">project</a>, <a href="/categories/project/open-source/">open-source</a>
+  </div>
+
         
+  
+  <div class="tags">
+    <a href="/tags/html5/">html5</a>, <a href="/tags/css/">css</a>, <a href="/tags/stylus/">stylus</a>, <a href="/tags/grid/">grid</a>
+  </div>
+
         
       
       <div class="clearfix"></div>
@@ -139,14 +180,14 @@
 </article>
 
 
+<section id="comment">
+  <h1 class="title">Comments</h1>
+  <div id="disqus_thread">
+    <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+  </div>
+</section>
 
 
-
-<nav id="pagination">
-  
-  
-  <div class="clearfix"></div>
-</nav>
 
   </section>
   <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
@@ -160,7 +201,7 @@ var disqus_shortname = 'diogomorettiwebsite';
   var dsq = document.createElement('script');
   dsq.type = 'text/javascript';
   dsq.async = true;
-  dsq.src = '//' + disqus_shortname + '.disqus.com/count.js';
+  dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
   (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
 }());
 </script>

@@ -80,5 +80,5 @@ exclude_generator:
 ## Docs: http://zespia.tw/hexo/docs/deployment.html
 deploy:
   type: github
-  repo: https://github.com/diogomoretti/diogo.nu
+  repo: git@github.com:diogomoretti/diogo.nu.git
   branch: gh-pages
