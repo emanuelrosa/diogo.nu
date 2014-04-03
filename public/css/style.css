@@ -560,6 +560,7 @@ h1 {
 h2 {
   font-size: 2.8em;
   color: #34495e;
+  margin: 1.4em 0 0.6em 0;
 }
 h3 {
   font-size: 2.4em;
@@ -631,12 +632,13 @@ p a:hover:after {
 }
 #main {
   position: relative;
-  max-width: 1500px;
+  max-width: 1200px;
   padding: 4em 4em 4em 39em;
   background: #fff;
 }
 #comment {
   margin: 3em 0;
+  padding: 10px 40px 10px 80px;
 }
 #comment .title {
   font-weight: normal;
