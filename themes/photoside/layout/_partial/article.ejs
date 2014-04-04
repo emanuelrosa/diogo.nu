@@ -42,7 +42,7 @@
     </footer>
     <% } %>
   </div>
+  <% if (item.layout == 'post') { %>
+    <%- partial('comment') %>
+  <% } %>
 </article>
-<% if (item.layout == 'post') { %>
-<%- partial('comment') %>
-<% } %>
