@@ -211,7 +211,7 @@ body:after {
   font-weight: 'normal';
   font-style: normal;
 }
-@media screen and (-webkit-min-device-pixel-ratio: 0) {
+@media screen and (-webkit-min-device-pixel-ratio:0) {
   @font-face {
     font-family: 'ralewaybold';
     src: url("../fonts/raleway-bold-webfont.svg#ralewaybold") format('svg');
@@ -224,7 +224,7 @@ body:after {
   font-weight: 'normal';
   font-style: normal;
 }
-@media screen and (-webkit-min-device-pixel-ratio: 0) {
+@media screen and (-webkit-min-device-pixel-ratio:0) {
   @font-face {
     font-family: 'icons';
     src: url("../fonts/icons.svg#icons") format('svg');
@@ -236,6 +236,12 @@ body:after {
   src: url("../fonts/fontawesome-webfont.eot?#iefix") format('embedded-opentype'), url("../fonts/fontawesome-webfont.woff") format('woff'), url("../fonts/fontawesome-webfont.ttf") format('truetype'), url("../fonts/fontawesome-webfont.svg#FontAwesome") format('svg');
   font-weight: 'normal';
   font-style: normal;
+}
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: 'FontAwesome';
+    src: url("../fonts/fontawesome-webfont.svg#FontAwesome") format('svg');
+  }
 }
 .fa {
   display: inline-block;
@@ -312,6 +318,12 @@ body:after {
 }
 .fa-share:before {
   content: "\f064";
+}
+.fa-rss-square:before {
+  content: "\f143";
+}
+.fa-facebook-square:before {
+  content: "\f082";
 }
 .photo-profile {
   -webkit-border-radius: 50%;
@@ -567,14 +579,14 @@ h3 {
   color: #555;
 }
 h4 {
-  font-size: 1.8em;
+  font-size: 1.7999999999999998em;
   text-transform: uppercase;
 }
 h5 {
   font-size: 1.6em;
 }
 h6 {
-  font-size: 1.2em;
+  font-size: 1.2000000000000002em;
 }
 p,
 ul {
@@ -874,7 +886,7 @@ article .entry code {
 article .entry ul li,
 article .entry ol li,
 article .entry dl li {
-  margin-bottom: 1em;
+  margin-bottom: 0.7em;
 }
 article .entry ul li a,
 article .entry ol li a,
