@@ -239,7 +239,7 @@ body:after {
 }
 .fa {
   display: inline-block;
-  color: #4d4d4d;
+  color: #5c5c5c;
   font-family: 'FontAwesome';
   font-style: normal;
   font-weight: normal;
@@ -539,7 +539,7 @@ body:after {
 }
 body {
   background: #fff;
-  color: #555;
+  color: #666;
   font-family: "Open Sans", Arial, helvetica, sans-serif;
   font-size: 62.5%;
   text-shadow: 0 0 1px transparent;
@@ -555,24 +555,25 @@ h6 {
   margin: 0.4em 0;
 }
 h1 {
-  font-size: 3.8em;
+  font-size: 4em;
 }
 h2 {
-  font-size: 2.8em;
+  font-size: 3em;
   color: #34495e;
   margin: 1.4em 0 0.6em 0;
 }
 h3 {
-  font-size: 2.4em;
+  font-size: 2.5em;
 }
 h4 {
-  font-size: 2em;
+  font-size: 1.7999999999999998em;
+  text-transform: uppercase;
 }
 h5 {
   font-size: 1.6em;
 }
 h6 {
-  font-size: 1.1em;
+  font-size: 1.2000000000000002em;
 }
 p,
 ul {
@@ -581,7 +582,7 @@ ul {
 }
 p {
   font-family: "Open Sans", Arial, helvetica, sans-serif;
-  color: #555;
+  color: #666;
 }
 p strong {
   font-weight: bold;
@@ -742,6 +743,9 @@ article {
   margin-bottom: 2em;
   position: relative;
 }
+article h2 {
+  border-bottom: 1px solid #eee;
+}
 article.post:after {
   position: absolute;
   width: 1em;
@@ -793,7 +797,7 @@ article header .date-item {
   line-height: 1;
   position: absolute;
   left: -9em;
-  top: 2.5em;
+  top: 3em;
   padding: 0.5em 0.6em;
   background: #eee;
 }
@@ -808,7 +812,7 @@ article header .title {
   display: inline-block;
 }
 article header .title a {
-  color: #555;
+  color: #666;
   text-decoration: none;
 }
 article header .title a:hover {
@@ -858,19 +862,40 @@ article .entry pre {
   font-family: Monaco, Menlo, Consolas, Courier New, monospace;
 }
 article .entry code {
-  background: #444;
-  color: #eee;
+  background: #eee;
+  color: #555;
   padding: 1px 6px;
   margin: 0 2px;
   font-size: 0.9em;
-  border: 1px solid #3d3d3d;
+  border: 1px solid #d2d2d2;
   -webkit-border-radius: 3px;
   border-radius: 3px;
 }
-article .entry ul,
-article .entry ol,
-article .entry dl {
-  margin-left: 20px;
+article .entry ul li,
+article .entry ol li,
+article .entry dl li {
+  margin-bottom: 1em;
+}
+article .entry ul li a,
+article .entry ol li a,
+article .entry dl li a {
+  color: #000;
+  border-bottom: 1px solid #ccc;
+  text-decoration: none;
+  background: #fbfbfb;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+  padding: 0 0.3em;
+}
+article .entry ul li a:hover,
+article .entry ol li a:hover,
+article .entry dl li a:hover {
+  border-color: #999;
+}
+article .entry ul li a:hover:after,
+article .entry ol li a:hover:after,
+article .entry dl li a:hover:after {
+  color: #999;
 }
 article .entry ul ul,
 article .entry ol ul,

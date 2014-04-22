@@ -182,6 +182,8 @@ Por exemplo, crie eum arquivo chamado `package.json` dentro da pasta `templates`
 }
 ```
 
+Um ponto importante, é que os arquivos lá da pasta templates que começam com `.`, como por exemplo o `.gitignore` você deverá substituir por `_`, ficando assim `_gitignore`. Mas não se preocupe, na hora que ele é gerado/compilado, ele se é renomeado para `.gitignore`. Isso é feito pelo `gulp-rename` para que os arquivos de configuração que começam com o `.`, não tenham seu comportamento padrão.
+
 Quando o generator for utilizado, o Slush/Gulp nada mais irá fazer que extrair tudo que está na pasta **templates** para a raiz e deletar os arquivos que ali estavam (slushfile.js, package.json, ...).
 
 ### Estrutura de arquivos
