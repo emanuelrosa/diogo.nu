@@ -27,9 +27,6 @@ article
     height: 150px
     overflow: hidden
     position: relative
-    //filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale")
-    //filter: gray
-    //-webkit-filter: grayscale(100%)
     background-size: cover
     background-position: center center
     display: block
@@ -117,10 +114,8 @@ article
         margin-bottom: 1em
         a
           color: black
-          border-bottom: 1px solid #ccc
+          border-bottom: 1px solid #ddd
           text-decoration: none
-          background: lighten(#f5f5f5, 60%)
-          border-radius: 2px
           padding: 0 .3em       
           &:hover
             border-color: #999
@@ -134,6 +129,9 @@ article
       border-bottom 1px solid color-border
       padding-bottom 10px
       margin-top 20px
+
+    h2
+      margin-bottom 1em
 
     h2, h3, h4, h5, h6
       font-weight normal
