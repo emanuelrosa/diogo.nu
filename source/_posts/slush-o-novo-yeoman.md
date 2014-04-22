@@ -3,7 +3,9 @@ date: 2014-04-21 17:03:41
 tags:
 - slush
 - generator
-- stylus
+- yeoman
+categories: 
+- tutorial
 feature: /img/posts/2014/slush.jpg
 ---
 
@@ -39,7 +41,11 @@ $ [sudo] npm install -g slush
 
 ### Criando seu primeiro generator
 
-Como exemplo, nosso projeto irá gerar um scaffolding para trabalhar com a [stack MEAN](http://code.tutsplus.com/tutorials/introduction-to-the-mean-stack--cms-19918).
+Como exemplo, nosso projeto irá gerar um scaffolding para trabalhar com a [stack MEAN](http://code.tutsplus.com/tutorials/introduction-to-the-mean-stack--cms-19918). Todo generator para Slush deve ter o prefixo **slush-**. Então vamos criar uma pasta chamada **slush-mean** e entrar nela:
+
+```bash
+$ mkdir slush-mean && cd slush-mean
+```
 
 ### Criação do arquivo package.json
 
@@ -49,7 +55,7 @@ Então primeiro vamos criar um arquivo chamado **package.json**, parecido com es
 {
   "name": "slush-mean",
   "version": "0.1.0",
-  "description": "Generate a simple web project using Wordpress",
+  "description": "Generate a simple web project using M.E.A.N. stack",
   "main": "slushfile.js",
   "keywords": [
     "slushgenerator",
@@ -73,9 +79,8 @@ Então primeiro vamos criar um arquivo chamado **package.json**, parecido com es
 }
 ```
 
-Vale ressaltar três peças importantes nesse arquivo:
+Vale ressaltar dois pontos/linhas importantes nesse arquivo:
 
-* No nosso **name** temos que usar o prefixo **slush-**. Por exemplo, se você quiser chamar seu gerador de **test**, no name deverá ficar **slush-test**.
 * No **main** devemos colocar o **slushfile.js**, pois assim como o Grunt e o Gulp, o Slush utiliza um arquivo de configuração próprio. Além do mais, o **main** é utilizado pelo *npm* para executar esse arquivo quando o módulo for instalado (veremos isso a seguir).
 * Nas **keywords** é importante o uso da palavra-chave **slushgenerator** para que seu gerador apareça na lista "oficial", lá no site do [Slush](http://klei.github.io/slush/#/).
 
@@ -165,7 +170,7 @@ Alguns pontos a serem observados:
 
 ### Criando os arquivos a serem gerados
 
-Essa parte é simples. Coloque dentro da pasta **templates** tudo que irá ser extraído. E agora vem a parte boa. Quando você quiser colocar "printar" o valor de uma resposta, simplesmente coloque `<%= nomeDaVariavelResposta %>` nos arquivos.
+Essa parte é simples. Coloque dentro da pasta **templates** tudo que irá ser extraído. E agora vem a parte boa. Quando você quiser "printar" o valor de uma resposta, simplesmente coloque `<%= nomeDaVariavelResposta %>` nos arquivos.
 
 Por exemplo, crie eum arquivo chamado `package.json` dentro da pasta `templates`:
 

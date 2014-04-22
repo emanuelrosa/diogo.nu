@@ -1,4 +1,4 @@
-title: Stylus Grid System e um breve devaneio sobre grids
+title: SGS, meu grid em Stylus
 date: 2014-03-31 22:03:21
 tags: 
 - html5
@@ -38,7 +38,7 @@ Como quase todo mundo utiliza pré-processadores css, cada um escolhe o sistema 
 
 Foi com base na "língua" que a muito tempo venho utilizando o [Semantic.gs](http://semantic.gs), na sua versão para o Stylus. Mas algumas coisas vinham me incomodando, como por exemplo não possuir muitas variáveis de configuração. Foi adicionando algumas *features* que quando eu vi, eu estava com um sistema de grid bem diferente (nem tanto, pois o "make-grid" é o mesmo) do *default* do Semantic.gs.
 
-## SGS
+## SGS (Stylus Grid System)
 
 O **SGS** é um *fork* do Semantic.gs, com várias variáveis de configuração e algumas outras features, dentre elas:
 

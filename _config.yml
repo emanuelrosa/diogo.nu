@@ -85,3 +85,9 @@ deploy:
   type: github
   repo: git@github.com:diogomoretti/diogo.nu.git
   branch: gh-pages
+
+# Feed
+feed:
+  type: atom
+  path: atom.xml
+  limit: 20

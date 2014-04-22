@@ -211,7 +211,7 @@ body:after {
   font-weight: 'normal';
   font-style: normal;
 }
-@media screen and (-webkit-min-device-pixel-ratio:0) {
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
   @font-face {
     font-family: 'ralewaybold';
     src: url("../fonts/raleway-bold-webfont.svg#ralewaybold") format('svg');
@@ -224,7 +224,7 @@ body:after {
   font-weight: 'normal';
   font-style: normal;
 }
-@media screen and (-webkit-min-device-pixel-ratio:0) {
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
   @font-face {
     font-family: 'icons';
     src: url("../fonts/icons.svg#icons") format('svg');
@@ -538,7 +538,7 @@ body:after {
   box-sizing: border-box;
 }
 body {
-  background: #fff;
+  background: #eee;
   color: #666;
   font-family: "Open Sans", Arial, helvetica, sans-serif;
   font-size: 62.5%;
@@ -564,16 +564,17 @@ h2 {
 }
 h3 {
   font-size: 2.5em;
+  color: #555;
 }
 h4 {
-  font-size: 1.7999999999999998em;
+  font-size: 1.8em;
   text-transform: uppercase;
 }
 h5 {
   font-size: 1.6em;
 }
 h6 {
-  font-size: 1.2000000000000002em;
+  font-size: 1.2em;
 }
 p,
 ul {
@@ -589,11 +590,8 @@ p strong {
 }
 p a {
   color: #000;
-  border-bottom: 1px solid #ccc;
+  border-bottom: 1px solid #ddd;
   text-decoration: none;
-  background: #fbfbfb;
-  -webkit-border-radius: 2px;
-  border-radius: 2px;
   padding: 0 0.3em;
 }
 p a:hover {
@@ -633,9 +631,11 @@ p a:hover:after {
 }
 #main {
   position: relative;
-  max-width: 1250px;
-  padding: 4em 4em 4em 39em;
+  max-width: 1150px;
+  padding: 4em 6em 4em 39em;
   background: #fff;
+  -webkit-box-shadow: 2px 0 60px 7px #ddd;
+  box-shadow: 2px 0 60px 7px #ddd;
 }
 #comment {
   margin: 3em 0;
@@ -880,11 +880,8 @@ article .entry ul li a,
 article .entry ol li a,
 article .entry dl li a {
   color: #000;
-  border-bottom: 1px solid #ccc;
+  border-bottom: 1px solid #ddd;
   text-decoration: none;
-  background: #fbfbfb;
-  -webkit-border-radius: 2px;
-  border-radius: 2px;
   padding: 0 0.3em;
 }
 article .entry ul li a:hover,
@@ -913,6 +910,9 @@ article .entry h1 {
   border-bottom: 1px solid #ddd;
   padding-bottom: 10px;
   margin-top: 20px;
+}
+article .entry h2 {
+  margin-bottom: 1em;
 }
 article .entry h2,
 article .entry h3,
@@ -1120,7 +1120,7 @@ article footer .addthis iframe {
   display: inline-block;
   position: relative;
   padding: 0 3em 0 14em;
-  width: 45%;
+  width: 95%;
   height: auto;
   margin: 1em 2em 5em 0;
   vertical-align: top;
@@ -1479,7 +1479,7 @@ pre .tex .formula {
     margin-top: 1em;
   }
   #social .nav-social-item .nav-social-link {
-    font-size: 1.6em;
+    font-size: 2em;
     margin: -2px;
   }
   .featured-image {
