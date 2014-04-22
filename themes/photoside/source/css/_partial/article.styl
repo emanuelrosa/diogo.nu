@@ -6,6 +6,9 @@ icon-gap = 25px
 article
   margin-bottom: 2em
   position: relative
+
+  h2
+    border-bottom: 1px solid #eee
   
   &.post
     &:after
@@ -54,7 +57,7 @@ article
       line-height: 1
       position: absolute
       left: -9em
-      top: 2.5em
+      top: 3em
       padding: .5em .6em
       background: #eee
       .link-time-item
@@ -101,16 +104,28 @@ article
       font-family: font-mono
 
     code
-      background: sh-bg
-      color: sh-text
+      background: #eee
+      color: #555
       padding: 1px 6px
       margin: 0 2px
       font-size: 0.9em
-      border: 1px solid darken(sh-bg, 10%)
+      border: 1px solid darken(#ddd, 5%)
       border-radius: 3px
 
     ul, ol, dl
-      margin-left 20px
+      li
+        margin-bottom: 1em
+        a
+          color: black
+          border-bottom: 1px solid #ccc
+          text-decoration: none
+          background: lighten(#f5f5f5, 60%)
+          border-radius: 2px
+          padding: 0 .3em       
+          &:hover
+            border-color: #999
+          &:hover:after
+            color: #999
       ul, ol, dl
         margin-top 0
 
