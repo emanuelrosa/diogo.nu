@@ -9,7 +9,7 @@ categories:
 - project
 - open-source
 color: f0f0f0
-feature: /img/posts/2014/sgs.jpg
+feature: 2014/sgs.jpg
 ---
 
 Hoje em dia existem muitos sistemas de grid. Mas cada um tem sempre alguma coisa que não gostamos.
