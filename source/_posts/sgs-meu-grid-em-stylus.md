@@ -8,7 +8,7 @@ tags:
 categories: 
 - project
 - open-source
-layout: post
+color: f0f0f0
 feature: /img/posts/2014/sgs.jpg
 ---
 

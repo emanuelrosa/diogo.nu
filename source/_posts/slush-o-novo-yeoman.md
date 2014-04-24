@@ -6,7 +6,8 @@ tags:
 - yeoman
 categories: 
 - tutorial
-feature: /img/posts/2014/slush.jpg
+color: e8e8e8
+feature: /img/posts/2014/slush.png
 ---
 
 Conheça o novo generator que utiliza Gulp para o scaffolding de seus projetos 

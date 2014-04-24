@@ -10,11 +10,9 @@
       <%- partial('post/title') %>
     </header>
     <% if (item.feature){ %>
-    <a href="<%- config.root %><%- item.path %>" class="feature-box" style="background-image: url('<%- item.feature %>')">
-      <% if (item.feature_credits){ %>
-      <span class="feature-credits"><%- item.feature_credits %></span>
-      <% } %>
-    </a>
+      <a href="<%- config.root %><%- item.path %>" class="feature-box" style="background-color: #<%- item.color %>">
+        <img class="feature-photo" src="<%- item.feature %>" />
+      </a>
     <% } %>
     <div class="entry">
       <% if (item.excerpt && index){ %>
