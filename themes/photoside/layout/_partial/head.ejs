@@ -28,23 +28,13 @@
     <% if (page.keywords){ %><meta name="keywords" content="<%= page.keywords %>"><% } %>
     <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" />
 
-    <% if (page.title){ %><meta property="og:title" content="<%= page.title %>"/><% } %>
-    <meta property="og:site_name" content="<%= config.title %>"/>
-
-    <% if(page.cover) { %>
-      <meta property="og:image" content="<%= page.cover %>" />
-    <% } else { %>
-      <meta property="og:image" content="<%= config.cover %>"/>
-    <% } %>
-
     <!-- Facebook Meta -->
-    <meta property="fb:app_id" content="1442669005975536"/>
-    <meta property="og:title" content="<%= config.title %> &mdash; Front-end developer"/>
-    <meta property="og:site_name" content="<%= config.author %>"/>
-    <meta property="og:url" content="<%= config.url %>"/>
-    <meta property="og:image" content="http://diogo.nu/img/diogo-profile.jpg"/>
-    <meta property="og:type" content="blog"/>
-    <meta property="og:description" content="HTML5, CSS3, JavaScript and front-end world."/>
+    <meta property="fb:app_id" content="1442669005975536">
+    <meta property="og:title" content="<%= config.title %> - Front-end developer">
+    <meta property="og:url" content="<%= config.url %>">
+    <meta property="og:image" content="http://diogo.nu/img/fb-share.jpg">
+    <meta property="og:type" content="website">
+    <meta property="og:description" content="<%= config.subtitle %>">
 
     <link rel="apple-touch-icon" sizes="57x57" href="<%- config.favicons_dir %>apple-touch-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="114x114" href="<%- config.favicons_dir %>apple-touch-icon-114x114.png">
