@@ -26,11 +26,11 @@ O [Yeoman](http://yeoman.io/) utiliza do [Grunt](http://gruntjs.com/) para fazer
 
 Apesar dos muitos *generators*, criar um generator exige muito cuidado, além de ler um pouco a documentação do Yeoman.
 
-Com o surgimento do [GulpJS](http://gulpjs.com/), um *task runner*, assim como o Grunt, foi criado o [Slush](http://klei.github.io/slush/#/), um generator que utiliza o Gulp, ao invés do Grunt, além de ter um proposta mais simples.
+Com o surgimento do [GulpJS](http://gulpjs.com/), um *task runner*, assim como o Grunt, foi criado o [Slush](http://slushjs.github.io/#/), um generator que utiliza o Gulp, ao invés do Grunt, além de ter um proposta mais simples.
 
 ## Começando com o Slush
 
-O [Slush](http://klei.github.io/slush/#/) depende apenas do [GulpJS](http://gulpjs.com/) e de [seus plugins](http://gulpjs.com/plugins/). Para quem já mexeu com o Gulp, não terá muita dificuldade. Se você ainda não mexeu com o Gulp, aconselho o artigo do **Leonardo Souza**, [Bye bye Grunt.js, hello Gulp.js!](http://blog.caelum.com.br/bye-bye-grunt-js-hello-gulp-js/).
+O [Slush](http://slushjs.github.io/#/) depende apenas do [GulpJS](http://gulpjs.com/) e de [seus plugins](http://gulpjs.com/plugins/). Para quem já mexeu com o Gulp, não terá muita dificuldade. Se você ainda não mexeu com o Gulp, aconselho o artigo do **Leonardo Souza**, [Bye bye Grunt.js, hello Gulp.js!](http://blog.caelum.com.br/bye-bye-grunt-js-hello-gulp-js/).
 
 ### Instalando o Slush
 
@@ -83,7 +83,7 @@ Então primeiro vamos criar um arquivo chamado **package.json**, parecido com es
 Vale ressaltar dois pontos/linhas importantes nesse arquivo:
 
 * No **main** devemos colocar o **slushfile.js**, pois assim como o Grunt e o Gulp, o Slush utiliza um arquivo de configuração próprio. Além do mais, o **main** é utilizado pelo *npm* para executar esse arquivo quando o módulo for instalado (veremos isso a seguir).
-* Nas **keywords** é importante o uso da palavra-chave **slushgenerator** para que seu gerador apareça na lista "oficial", lá no site do [Slush](http://klei.github.io/slush/#/).
+* Nas **keywords** é importante o uso da palavra-chave **slushgenerator** para que seu gerador apareça na lista "oficial", lá no site do [Slush](http://slushjs.github.io/#/).
 
 ### Instalar as dependências
 
