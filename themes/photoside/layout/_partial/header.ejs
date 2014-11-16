@@ -1,7 +1,7 @@
 <header id="header">
     <h1 class="user-logo">
         <a href="/">
-            <img class="photo-profile" src="/img/diogo-profile.jpg" alt="<%= config.author %>" />
+            <img class="photo-profile" src="/img/diogo_avatar_2015.jpg" alt="<%= config.author %>" />
         </a>
     </h1>
     <h2 class="user-name">
@@ -13,6 +13,7 @@
             <li class="nav-item"><a class="nav-link<% if (is_current('about')){ %> active<% } %>" href="/about">About</a></li>
             <li class="nav-item"><a class="nav-link<% if (page.layout == 'post' || is_home()){ %> active<% } %>" href="/">Blog</a></li>
             <li class="nav-item"><a class="nav-link<% if (is_current('projects')){ %> active<% } %>" href="/projects">Projects</a></li>
+            <li class="nav-item"><a class="nav-link<% if (is_current('talks')){ %> active<% } %>" href="/talks">Talks</a></li>
             <li class="nav-item"><a class="nav-link<% if (is_current('contact')){ %> active<% } %>" href="/contact">Contact</a></li>
         </ul>
     </nav>
