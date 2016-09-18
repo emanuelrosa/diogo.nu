@@ -211,7 +211,7 @@ body:after {
   font-weight: 'normal';
   font-style: normal;
 }
-@media screen and (-webkit-min-device-pixel-ratio:0) {
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
   @font-face {
     font-family: 'ralewaybold';
     src: url("../fonts/raleway-bold-webfont.svg#ralewaybold") format('svg');
@@ -224,24 +224,12 @@ body:after {
   font-weight: 'normal';
   font-style: normal;
 }
-@media screen and (-webkit-min-device-pixel-ratio:0) {
-  @font-face {
-    font-family: 'icons';
-    src: url("../fonts/icons.svg#icons") format('svg');
-  }
-}
 @font-face {
   font-family: 'FontAwesome';
   src: url("../fonts/fontawesome-webfont.eot");
   src: url("../fonts/fontawesome-webfont.eot?#iefix") format('embedded-opentype'), url("../fonts/fontawesome-webfont.woff") format('woff'), url("../fonts/fontawesome-webfont.ttf") format('truetype'), url("../fonts/fontawesome-webfont.svg#FontAwesome") format('svg');
   font-weight: 'normal';
   font-style: normal;
-}
-@media screen and (-webkit-min-device-pixel-ratio:0) {
-  @font-face {
-    font-family: 'FontAwesome';
-    src: url("../fonts/fontawesome-webfont.svg#FontAwesome") format('svg');
-  }
 }
 .fa {
   display: inline-block;
@@ -326,9 +314,9 @@ body:after {
   content: "\f082";
 }
 .photo-profile {
-  -webkit-border-radius: 50%;
   border-radius: 50%;
   border: 5px solid rgba(44,62,80,0.5);
+  max-width: 60%;
 }
 .user-logo {
   margin-bottom: 0;
@@ -355,7 +343,6 @@ body:after {
   display: inline-block;
   padding: 0.5em 1.4em;
   border: none;
-  -webkit-border-radius: 3px;
   border-radius: 3px;
   margin: 0.6em 0.6em 0.6em 0;
   text-decoration: none;
@@ -498,7 +485,6 @@ body:after {
   vertical-align: center;
 }
 .btn.btn-radius {
-  -webkit-border-radius: 0.5em;
   border-radius: 0.5em;
 }
 .btn.btn-link {
@@ -579,14 +565,14 @@ h3 {
   color: #555;
 }
 h4 {
-  font-size: 1.7999999999999998em;
+  font-size: 1.8em;
   text-transform: uppercase;
 }
 h5 {
   font-size: 1.6em;
 }
 h6 {
-  font-size: 1.2000000000000002em;
+  font-size: 1.2em;
 }
 p,
 ul {
@@ -688,7 +674,6 @@ p a:hover:after {
   color: #f5f5f5;
   font-size: 1em;
   text-decoration: none;
-  -webkit-border-radius: 3px;
   border-radius: 3px;
   margin: 2px auto;
 }
@@ -776,19 +761,29 @@ article .feature-box {
   display: block;
   text-decoration: none;
 }
-@media only screen and (min-width:681px) and (max-width:1100px), (min-device-width: 768px) and (max-device-width: 1300px) {
+@media only screen and (min-width: 681px) and (max-width: 800px) {
   article .feature-box {
     height: 120px;
   }
 }
-@media only screen and (max-width:680px) {
+@media only screen and (max-width: 680px) {
   article .feature-box {
     height: 100px;
   }
 }
 article .feature-photo {
   display: block;
-  margin: -2.5em auto 0 auto;
+  margin: -4% auto 0 auto;
+}
+@media only screen and (min-width: 681px) and (max-width: 800px) {
+  article .feature-photo {
+    margin: -10% auto 0 auto;
+  }
+}
+@media only screen and (max-width: 680px) {
+  article .feature-photo {
+    margin: -7% auto 0 auto;
+  }
 }
 article header {
   position: relative;
@@ -841,10 +836,10 @@ article .entry p {
   margin-bottom: 1.2em;
 }
 article .entry blockquote {
-  font-size: 1.5em;
+  font-size: 2em;
   line-height: 1.8em;
   color: #aaa;
-  margin: 2.8em 3em 1.5em 3em;
+  margin: 1.5em 3em 3em;
 }
 article .entry blockquote cite {
   display: table;
@@ -871,7 +866,6 @@ article .entry code {
   margin: 0 2px;
   font-size: 0.9em;
   border: 1px solid #d2d2d2;
-  -webkit-border-radius: 3px;
   border-radius: 3px;
 }
 article .entry ul li,
@@ -1057,6 +1051,16 @@ article footer .addthis {
 article footer .addthis iframe {
   margin-top: 0;
 }
+.translation-note {
+  border: 1px dashed #fbf3a1;
+  border-radius: 2px;
+  background: #fefce7;
+  padding: 1em;
+}
+.translation-note > p {
+  margin: 0 !important;
+  font-size: 1.2em;
+}
 .inactive {
   display: none !important;
 }
@@ -1144,7 +1148,6 @@ article footer .addthis iframe {
   width: 8em;
   left: -0.5em;
   top: 0.5em;
-  -webkit-border-radius: 4px;
   border-radius: 4px;
   color: #fff;
   text-align: center;
@@ -1179,7 +1182,6 @@ article footer .addthis iframe {
   position: absolute;
   top: 0;
   left: 0;
-  -webkit-border-radius: 10px;
   border-radius: 10px;
 }
 .project-item .project-overlay {
@@ -1188,13 +1190,11 @@ article footer .addthis iframe {
   left: 0;
   width: 100%;
   height: 100%;
-  -webkit-border-radius: 50%;
   border-radius: 50%;
 }
 .project-item .project-photo {
   max-width: 100%;
   height: auto;
-  -webkit-border-radius: 50%;
   border-radius: 50%;
   border: 5px solid #f2f2f2;
 }
@@ -1220,7 +1220,6 @@ article footer .addthis iframe {
   border: 1px solid #ddd;
   margin-top: 15px;
   padding: 7px 15px;
-  -webkit-border-radius: 2px;
   border-radius: 2px;
   text-shadow: 0 0 1px #fff;
   line-height: 1.6;
@@ -1260,7 +1259,6 @@ figure.highlight {
   border: 1px solid #3d3d3d;
   margin-top: 15px;
   padding: 7px 15px;
-  -webkit-border-radius: 2px;
   border-radius: 2px;
   line-height: 1.6;
   overflow: auto;
@@ -1273,8 +1271,10 @@ figure.highlight figcaption {
   margin-bottom: 5px;
 }
 figure.highlight figcaption > span {
-  border-bottom: 1px dotted #7c7c7c;
   color: #fff;
+  background: #e74c3c;
+  padding: 0.1em 0.4em;
+  border-radius: 2px;
 }
 figure.highlight figcaption a {
   position: absolute;
@@ -1392,7 +1392,7 @@ pre .deletion {
 pre .tex .formula {
   background: #eee8d5;
 }
-@media only screen and (max-width:680px) {
+@media only screen and (max-width: 680px) {
   body {
     padding: 0;
     line-height: 1.7em;
@@ -1446,13 +1446,11 @@ pre .tex .formula {
   }
   #menu.active {
     background: rgba(38,38,38,0.9);
-    -webkit-border-radius: 4px 4px 0 0;
     border-radius: 4px 4px 0 0;
   }
   #nav {
     position: absolute;
     background: rgba(38,38,38,0.9);
-    -webkit-border-radius: 4px 0 4px 4px;
     border-radius: 4px 0 4px 4px;
     top: 2.7em;
     right: 0.78em;
@@ -1472,7 +1470,6 @@ pre .tex .formula {
   }
   #nav .nav-item .nav-link:hover {
     background: #222;
-    -webkit-border-radius: 3px;
     border-radius: 3px;
   }
   #nav.responsive-menu {
@@ -1514,7 +1511,7 @@ pre .tex .formula {
     display: block;
   }
 }
-@media only screen and (min-width:681px) and (max-width:1100px), (min-device-width: 768px) and (max-device-width: 1300px) {
+@media only screen and (min-width: 681px) and (max-width: 800px) {
   body {
     line-height: 1.8em;
     font-size: 55%;

@@ -80,9 +80,9 @@ theme: photoside
 exclude_generator:
 
 # Deployment
-## Docs: http://zespia.tw/hexo/docs/deployment.html
+## Docs: https://hexo.io/docs/deployment.html
 deploy:
-  type: github
+  type: git
   repo: git@github.com:diogomoretti/diogo.nu.git
   branch: gh-pages
 
