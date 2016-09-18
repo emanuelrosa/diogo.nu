@@ -4,3 +4,4 @@ db.json
 *.sublime-project
 debug.log
 public
+.deploy
