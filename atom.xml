@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Diogo Moretti</title>
+  <subtitle>Front-end developer based in Florianopolis / SC / Brazil</subtitle>
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://diogo.nu/"/>
+  <updated>2016-09-18T21:30:31.000Z</updated>
+  <id>http://diogo.nu/</id>
+  
+  <author>
+    <name>Diogo Moretti</name>
+    <email>diogo@diogo.nu</email>
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Faça boilerplates, mas do jeito certo</title>
+    <link href="http://diogo.nu/faca-boilerplates-mas-do-jeito-certo/"/>
+    <id>http://diogo.nu/faca-boilerplates-mas-do-jeito-certo/</id>
+    <published>2016-09-18T21:26:11.000Z</published>
+    <updated>2016-09-18T21:30:31.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>Você provavelmente está fazendo seus boilerplates de forma não muito boa no github.</p>
+<a id="more"></a>
+<p>Nos últimos anos provavelmente o que se tem mais visto no <a href="https://github.com" target="_blank" rel="external">github</a> são boilerplates. Isso é muito bom, pois provavelmente você vai encontrar o que mais se adequa a sua necessidade. Mas como eles não atendem 100% o problema, você vai lá e… <strong>cria o seu</strong>!</p>
+<p>Creio que as primeiras contribuições da maioria dos desenvolvedores foram boilerplates. E o problema está justamente ai. Não em criar seu próprio boilerplate, mas criar de um jeito não tão intuitivo e de fácil usabilidade.</p>
+<blockquote><br>    Boilerplates precisam ser gerados, não clonados.<br></blockquote>
+
+<h3 id="O-“problema”"><a href="#O-“problema”" class="headerlink" title="O “problema”"></a>O “problema”</h3><p>Muitos desenvolvedores criam seus boilerplates simplemente criando um repositório e colocando os arquivos lá dentro.</p>
+<p>Vamos contar uma historinha rápida: O <strong>José</strong> quer fazer um projetinho usando react e webpack. Nosso amigo <strong>José</strong>, navegando no github, acha um boilerplate do <strong>Pedro</strong> que usa essas tecnologias, bem próximo do jeito que ele precisa.</p>
+<p>Clonando esse repositório simples, <strong>José</strong> terá alguns problemas, entre eles:</p>
+<ul>
+<li>Histórico de commits (eu sei que dá pra clonar usando <code>--depth 1</code>)</li>
+<li>Terá que excluir a pasta <code>.git</code> para retirar as referências remote</li>
+<li>José terá que trocar metadados em vários arquivos (como package.json e readme.md)</li>
+<li>Se ele quiser trocar alguma tecnologia como pré-processador css, ele terá que fazer várias mudanças e instalações</li>
+<li>Não é intuitivo e escalável, já que o usuário terá que fazer os mesmos procedimentos burocráticos na próxima vez</li>
+</ul>
+<p>A única vantagem é apenas para o criador do boilerplate, já que a manutenção é mais fácil comparada a algum generator.</p>
+<h3 id="O-melhor-jeito"><a href="#O-melhor-jeito" class="headerlink" title="O melhor jeito"></a>O melhor jeito</h3><p>A resposta é uma só: <strong>Scaffolding Generators</strong> ou apenas <strong>Generators</strong>. Sim, eles não são novidades para ninguém, porém a maioria os descarta pelo simples fato de não ser tão rápido criar boilerplates com eles.</p>
+<p>Temos algumas opções open-source, mas vou citar três:</p>
+<ul>
+<li><a href="http://yeoman.io" target="_blank" rel="external">Yeoman</a></li>
+<li><a href="http://slushjs.github.io" target="_blank" rel="external">Slush</a></li>
+<li>CLI (Por exemplo, o <a href="https://github.com/facebookincubator/create-react-app" target="_blank" rel="external">Create React App</a>)</li>
+</ul>
+<p>Concordo que além de não ser tão rápido criar boilerplates usando generators, eles muitas vezes envolvem um conhecimento a mais de JavaScript e também porque é um pouco chato testar.</p>
+<p>Dentre as milhares de vantagens dos generators, ressalto algumas:</p>
+<ul>
+<li>Sistema de perguntas para gerar a aplicação (usuário pode responder por exemplo Nome do Projeto, Pré-Processador CSS…)</li>
+<li>Para gerar o scaffolding basta rodar um comando</li>
+<li>Possuem sub-generators (como por exemplo gerar um componente react)</li>
+<li>Seu boilerplate fica na lista de generators (no caso do Slush e Yeoman)</li>
+</ul>
+<h3 id="Conclusao"><a href="#Conclusao" class="headerlink" title="Conclusão"></a>Conclusão</h3><p>Não, eu não tive experiência ruim clonando repositórios, até porque sempre fui fã de generators, seja usando ou criando.</p>
+<p>Também não estou dizendo que boilerplates em repositórios é ruim. Inclusive, se você já tem algum, deixe ele lá bonitinho =]</p>
+<p>Mas quando for fazer seu próximo boilerplate, pense duas vezes antes de deixá-lo largado em um simples repositório.</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;Você provavelmente está fazendo seus boilerplates de forma não muito boa no github.&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="open-source" scheme="http://diogo.nu/categories/open-source/"/>
+    
+    
+      <category term="javascript" scheme="http://diogo.nu/tags/javascript/"/>
+    
+      <category term="boilerplate" scheme="http://diogo.nu/tags/boilerplate/"/>
+    
+      <category term="github" scheme="http://diogo.nu/tags/github/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Começando com o Browserify</title>
+    <link href="http://diogo.nu/comecando-com-o-browserify/"/>
+    <id>http://diogo.nu/comecando-com-o-browserify/</id>
+    <published>2014-09-24T16:26:11.000Z</published>
+    <updated>2016-09-18T16:59:28.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>Saiba como começar com a modularizar seu código usando o Browserify</p>
+<a id="more"></a>
+<h2 id="Introducao"><a href="#Introducao" class="headerlink" title="Introdução"></a>Introdução</h2><p>Ultimamente no “mundo front-endiano” tem se falado muito em modularização, principalmente em CSS e JS. Mais particularmente em JS, muito se fala em componentes, onde podemos usa-los sozinhos ou como um todo, bem como, com alguns parâmetros, modificar esses componentes já existentes.</p>
+<p>Muitos de nós tem feito isso ultimamente utilizando o padrão de <a href="http://requirejs.org/docs/whyamd.html" target="_blank" rel="external">Módulos AMD</a> e usando o <a href="http://requirejs.org" target="_blank" rel="external">RequireJS</a> para fazer isso.</p>
+<p>No último ano, o <a href="http://browserify.org/" target="_blank" rel="external">Browserify</a> ganhou muita força, fazendo com que muitos desenvolvedores que já trabalhavam (ou até mesmo os que não trabalhavam) com NodeJS, passassem a utilizar ele para modularizar seus códigos.</p>
+<h2 id="Afinal-o-que-e-o-Browserify"><a href="#Afinal-o-que-e-o-Browserify" class="headerlink" title="Afinal, o que é o Browserify?"></a>Afinal, o que é o Browserify?</h2><p>O <a href="http://browserify.org/" target="_blank" rel="external">Browserify</a> nos permite usar o padrão de módulos do NodeJS no navegador. Nós definimos as dependências e depois o Browserify empacota tudo isso em apenas um arquivo JS, limpo e estruturado. Você inclui os arquivos necessários usando <code>require(&#39;./seuArquivo.js&#39;)</code> e também módulos publicados no <a href="https://www.npmjs.org/" target="_blank" rel="external">NPM</a>. O Browserify também gera <em>source maps</em> para você depurar os arquivos JS individualmente, apesar de estarem em um arquivo só.</p>
+<h2 id="Por-que-usar-modulos-do-Node"><a href="#Por-que-usar-modulos-do-Node" class="headerlink" title="Por que usar módulos do Node?"></a>Por que usar módulos do Node?</h2><p>Importação de módulos é uma mão-na-roda. Ao invés de visitar uma série de sites para baixar as dependências do seu projeto, você pode fazer isso apenas usando <code>require()</code>. Bibliotecas JS como <a href="https://www.npmjs.org/package/jquery/" target="_blank" rel="external">jQuery</a>, <a href="https://www.npmjs.org/package/backbone" target="_blank" rel="external">Backbone</a>, <a href="https://www.npmjs.org/package/underscore" target="_blank" rel="external">Underscore</a> e até <a href="https://www.npmjs.org/package/angular/" target="_blank" rel="external">Angular</a> (apesar de não ser um módulo oficial) estão  disponíveis no NPM. Além do mais, se você já está trabalhando em um site que já roda em Node, você estará simplificando as coisas, pois já terá uma maneira comum de estruturar todos os seus JS.</p>
+<h2 id="O-que-voce-precisa-para-comecar"><a href="#O-que-voce-precisa-para-comecar" class="headerlink" title="O que você precisa para começar?"></a>O que você precisa para começar?</h2><p>Para começar com o Browserify, você precisa ter:</p>
+<ul>
+<li><a href="http://nodejs.org" target="_blank" rel="external">NodeJS</a> e o <a href="https://www.npmjs.org/" target="_blank" rel="external">NPM</a> (o NPM já vem junto com o Node =])</li>
+<li><a href="http://browserify.org/" target="_blank" rel="external">Browserify</a></li>
+<li>Alguns módulos seus ou de terceiros (NPM)</li>
+</ul>
+<h2 id="Comecando…"><a href="#Comecando…" class="headerlink" title="Começando…"></a>Começando…</h2><p>Para começar, precisamos ter o Browserify instalado globalmente na sua máquina, simplesmente digite:</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><div class="line">$ [sudo] npm install -g browserify</div></pre></td></tr></table></figure>
+<h2 id="Criando-seu-primeiro-projeto"><a href="#Criando-seu-primeiro-projeto" class="headerlink" title="Criando seu primeiro projeto"></a>Criando seu primeiro projeto</h2><p>Para um primeiro projeto teste, vamos começar importando uma biblioteca muito popular, o <a href="https://www.npmjs.org/package/underscore" target="_blank" rel="external">Underscore</a>. Vamos usar essa <em>lib</em> para encontrar <strong>o campeão da Copa do Mundo de 2014</strong>. Vamos chamar esse arquivo de <code>worldCup.js</code> e colocar ele na pasta <code>js</code> do nosso projeto.</p>
+<p>Nós começamos designando a variável <code>_</code> para o Underscore, usando o <code>require()</code>.</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><div class="line"><span class="keyword">var</span> _ = <span class="built_in">require</span>(<span class="string">'underscore'</span>);</div></pre></td></tr></table></figure>
+<p>Agora usando as funções <code>each()</code> e o <code>find()</code> do Underscore, vamos buscar em dois <em>arrays</em> e mostrar através do <code>console.log()</code> para saber se encontramos a seleção campeã da Copa do Mundo de 2014 na lista de seleções. Nosso código javascript será parecido com este:</p>
+<figure class="highlight js"><figcaption><span>worldCup.js</span></figcaption><table><tr><td class="code"><pre><div class="line"><span class="keyword">var</span> _ = <span class="built_in">require</span>(<span class="string">'underscore'</span>);</div><div class="line"></div><div class="line"><span class="keyword">var</span> teams = [<span class="string">'Brasil'</span>, <span class="string">'Holanda'</span>, <span class="string">'Argentina'</span>, <span class="string">'Alemanha'</span>, <span class="string">'Espanha'</span>],</div><div class="line">    othersTeams = [<span class="string">'Inglaterra'</span>, <span class="string">'Uruguai'</span>, <span class="string">'México'</span>, <span class="string">'França'</span>, <span class="string">'Chile'</span>];</div><div class="line"> </div><div class="line">_.each([teams, othersTeams], <span class="function"><span class="keyword">function</span>(<span class="params">team</span>) </span>&#123;</div><div class="line">    findChampion(team);</div><div class="line">&#125;);</div><div class="line"> </div><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">findChampion</span>(<span class="params">values</span>) </span>&#123;</div><div class="line">    _.find(values, <span class="function"><span class="keyword">function</span>(<span class="params">championTeam</span>) </span>&#123;</div><div class="line">        <span class="keyword">if</span> (championTeam === <span class="string">'Alemanha'</span>) &#123;</div><div class="line">            <span class="built_in">console</span>.log(<span class="string">'Esta é a seleção campeã'</span>);</div><div class="line">        &#125; <span class="keyword">else</span> &#123;</div><div class="line">            <span class="built_in">console</span>.log(<span class="string">'Esta não é seleção campeã :('</span>);</div><div class="line">        &#125;</div><div class="line">    &#125;);</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>Se você já trabalha/trabalhou com NodeJS sabe que cada dependência deve ser instalada e/ou <em>setada</em> no arquivo <code>package.json</code>. Então, como vamos usar a biblioteca Underscore, devemos instalar a mesma no nosso projeto e incluí-la na lista de dependências:</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><div class="line">$ [sudo] npm install underscore --save</div></pre></td></tr></table></figure>
+<p>Fazendo isso, você está dizendo que seu projeto depende do Underscore. Todo módulo instalado pelo npm fica na pasta <code>node_modules</code>.</p>
+<h3 id="Rodando-pela-primeira-vez-o-Browserify"><a href="#Rodando-pela-primeira-vez-o-Browserify" class="headerlink" title="Rodando pela primeira vez o Browserify"></a>Rodando pela primeira vez o Browserify</h3><p>Agora vamos rodar o Browserify no nosso projeto. Toda vez que o Browserify é executado ele gera um novo arquivo <code>.js</code>. Neste nosso caso, ele irá gerar um único arquivo <strong>.js</strong>, onde esse terá o Underscore juntamente como nosso código. Sabendo disso, rode este comando no seu terminal:</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><div class="line">$ browserify js/worldCup.js -o js/main.js <span class="_">-d</span></div></pre></td></tr></table></figure>
+<p>Isso irá gerar um novo arquivo chamado <strong>main.js</strong>, este definido pelo parâmetro <code>-o</code>. Veja que também passamos o parâmetro <code>-d</code> para gerar <em>source maps</em>, onde assim podemos inspecionar possíveis erros no Underscore ou no nosso código. <em>Source Maps</em> são muito comuns em pré-processadores css e js, mas não é uma boa prática usá-los em produção.</p>
+<h3 id="Usando-o-arquivo-de-saida"><a href="#Usando-o-arquivo-de-saida" class="headerlink" title="Usando o arquivo de saída"></a>Usando o arquivo de saída</h3><p>Depois que ele gerou o arquivo <strong>main.js</strong>, agora é só chama-lo no nosso arquivo html:</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">"js/main.js"</span>&gt;</span><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></div></pre></td></tr></table></figure>
+<h3 id="Importando-seus-arquivos-JS"><a href="#Importando-seus-arquivos-JS" class="headerlink" title="Importando seus arquivos JS"></a>Importando seus arquivos JS</h3><p>Provavelmente sua aplicação não terá somente módulos do node. Para incluir seu próprio arquivo JS é só usar no <code>require()</code> normalmente. A linha a seguir mostra como importar seu arquivo js chamado <code>meu_modulo.js</code> e guarda-lo na variável <code>meuModulo</code>:</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><div class="line">meuModulo = <span class="built_in">require</span>(<span class="string">'./meu_modulo.js'</span>);</div></pre></td></tr></table></figure>
+<p>Para importar nosso arquivo JS como um módulo precisamos estrutura-lo como tal, usando <code>module.exports</code>, assim:</p>
+<figure class="highlight javascript"><figcaption><span>meu_modulo.js</span></figcaption><table><tr><td class="code"><pre><div class="line"><span class="built_in">module</span>.exports = <span class="function"><span class="keyword">function</span>(<span class="params">vars</span>) </span>&#123;</div><div class="line">    <span class="comment">// Seu código JS aqui</span></div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h2 id="Exemplo-da-Copa-do-Mundo"><a href="#Exemplo-da-Copa-do-Mundo" class="headerlink" title="Exemplo da Copa do Mundo"></a>Exemplo da Copa do Mundo</h2><p>Para dar um toque de complexidade, vamos colocar nosso arquivo que busca o campeão da copa do mundo em um módulo. Desta maneira, podemos achar/recuperar o campeão do mundo em qualquer parte do nosso código JS, bastando apenas chamar a função.</p>
+<p>Para isso, nós vamos colocar nosso código dentro do arquivo <code>findChampionWorldCup.js</code> usando <code>module.exports</code>:</p>
+<figure class="highlight javascript"><figcaption><span>findChampionWorldCup.js</span></figcaption><table><tr><td class="code"><pre><div class="line"><span class="built_in">module</span>.exports = <span class="function"><span class="keyword">function</span> (<span class="params">values</span>) </span>&#123;</div><div class="line"></div><div class="line">    findChampion = <span class="literal">false</span>;</div><div class="line"> </div><div class="line">    _.find(values, <span class="function"><span class="keyword">function</span>(<span class="params">championTeam</span>) </span>&#123;</div><div class="line">        <span class="keyword">if</span> (championTeam === <span class="string">'Alemanha'</span>) &#123;</div><div class="line">            <span class="built_in">console</span>.log(<span class="string">'Esta é a seleção campeã'</span>);</div><div class="line">            findChampion = <span class="literal">true</span>;</div><div class="line">        &#125; <span class="keyword">else</span> &#123;</div><div class="line">            <span class="built_in">console</span>.log(<span class="string">'Esta não é seleção campeã :('</span>);</div><div class="line">        &#125;</div><div class="line">    &#125;);</div><div class="line"></div><div class="line">    <span class="keyword">return</span> findChampion;</div><div class="line"></div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>Nós adicionamos um <code>return</code> no nosso módulo. Se o script achar o campeão, ele retorna <code>true</code>, se não, retorna <code>false</code>. Note que este módulo usa o Underscore, mas nós não importamos ele. Se você quiser importar somente neste módulo é só chamar via <code>require()</code> acima do seu código:</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><div class="line"><span class="keyword">var</span> _ = <span class="built_in">require</span>(<span class="string">'underscore'</span>);</div><div class="line"> </div><div class="line"><span class="built_in">module</span>.exports = <span class="function"><span class="keyword">function</span> (<span class="params">values</span>) </span>&#123;</div><div class="line">    <span class="comment">// Seu código</span></div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>Acontece que quando usamos o Browserify ele vasculha todos os seus arquivos JS e ver quais importações tem (<code>require()</code>), para assim, compilar essa importação apenas uma vez.</p>
+<p>Mas a boas práticas nos sugere então chamar todas as bibliotecas e dependências no arquivo principal, ficando assim nosso arquivo JS:</p>
+<figure class="highlight javascript"><figcaption><span>app.js</span></figcaption><table><tr><td class="code"><pre><div class="line"><span class="keyword">var</span> _ = <span class="built_in">require</span>(<span class="string">'underscore'</span>),</div><div class="line">    teams = <span class="built_in">require</span>(<span class="string">'./teams.js'</span>),</div><div class="line">    findChampion = <span class="built_in">require</span>(<span class="string">'./findChampionWorldCup.js'</span>);</div><div class="line"> </div><div class="line"><span class="keyword">if</span> (findChampion(teams())) &#123;</div><div class="line">    <span class="built_in">document</span>.write(<span class="string">'Achamos o campeão!'</span>);</div><div class="line">&#125; <span class="keyword">else</span> &#123;</div><div class="line">    <span class="built_in">document</span>.write(<span class="string">'Não achamos o campeão :('</span>);</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p><strong>Atenção:</strong> Usamos <code>document.write</code> apenas para fins de exemplo. Não é uma boa prática utilizar esse método. Agora sim, o arquivo que contém as seleções:</p>
+<figure class="highlight js"><figcaption><span>teams.js</span></figcaption><table><tr><td class="code"><pre><div class="line"><span class="built_in">module</span>.exports = <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</div><div class="line">    <span class="keyword">return</span> [<span class="string">'Brasil'</span>, <span class="string">'Holanda'</span>, <span class="string">'Argentina'</span>, <span class="string">'Alemanha'</span>, <span class="string">'Espanha'</span>, <span class="string">'Inglaterra'</span>, <span class="string">'Uruguai'</span>, <span class="string">'México'</span>, <span class="string">'França'</span>, <span class="string">'Chile'</span>];</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>Note que nosso arquivo que contém o nome das seleções (<code>teams.js</code>) está sendo chamado como um módulo e possui um <code>return</code>, por isso precisamos chamar como função.</p>
+<p>Nossa estrutura ficou a seguinte:</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">├── js</div><div class="line">|   ├── app.js</div><div class="line">|   ├── findChampionWorldCup.js</div><div class="line">|   └── teams.js</div><div class="line">└── index.html</div></pre></td></tr></table></figure>
+<p>Agora vamos rodar o comando <code>browserify</code> novamente, só que agora diferente:</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><div class="line">browserify js/app.js -o js/main.js <span class="_">-d</span></div></pre></td></tr></table></figure>
+<p>Na nossa pasta JS terá um arquivo a mais:</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">├── js</div><div class="line">|   ├── app.js</div><div class="line">|   ├── findChampionWorldCup.js</div><div class="line">|   ├── main.js (arquivo gerado pelo browserify)</div><div class="line">|   └── teams.js</div><div class="line">└── index.html</div></pre></td></tr></table></figure>
+<p>Só pra ficar claro que nosso arquivo <code>index.html</code> é o mais simples possível:</p>
+<figure class="highlight html"><figcaption><span>index.html</span></figcaption><table><tr><td class="code"><pre><div class="line"><span class="meta">&lt;!DOCTYPE html&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">html</span> <span class="attr">lang</span>=<span class="string">"en"</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">"UTF-8"</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">title</span>&gt;</span>Browserify Project<span class="tag">&lt;/<span class="name">title</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">"js/main.js"</span>&gt;</span><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></div></pre></td></tr></table></figure>
+<p>Agora abra esse arquivo <code>index.html</code> no browser, provavelmente terá algo parecido com isso:<br><img src="/img/posts/2014/browserify-01.jpg" alt="Previa Browserfiy"></p>
+<p>E se você checar o console, terá algo como:</p>
+<p><img src="/img/posts/2014/browserify-02.jpg" alt="Previa Browserfiy"></p>
+<h3 id="Browserify-como-dependencia-no-package-json"><a href="#Browserify-como-dependencia-no-package-json" class="headerlink" title="Browserify como dependência no package.json"></a>Browserify como dependência no <code>package.json</code></h3><p>Digamos que você precisa tornar esse projeto público ou tem mais gente que precisa mexer nele. Precisamos incluir o Browserify como dependência no processo de desenvolvimento:</p>
+<figure class="highlight json"><table><tr><td class="code"><pre><div class="line">&#123;</div><div class="line">  <span class="attr">"name"</span>: <span class="string">"browserify-example"</span>,</div><div class="line">  <span class="attr">"version"</span>: <span class="string">"0.1.0"</span>,</div><div class="line">  <span class="attr">"description"</span>: <span class="string">"A simple browserify project"</span>,</div><div class="line">  <span class="attr">"author"</span>: <span class="string">"Diogo Moretti"</span>,</div><div class="line">  <span class="attr">"license"</span>: <span class="string">"MIT"</span>,</div><div class="line">  <span class="attr">"dependencies"</span>: &#123;</div><div class="line">    <span class="attr">"underscore"</span>: <span class="string">"~1.6.0"</span></div><div class="line">  &#125;,</div><div class="line">  <span class="attr">"devDependencies"</span>: &#123;</div><div class="line">    <span class="attr">"browserify"</span>: <span class="string">"latest"</span></div><div class="line">  &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>Nosso projeto possui o Underscore como dependência e o Browserify como dependência no desenvolvimento. Colocamos a versão do Browserify como <code>latest</code>, mas se você preferir pode usar <code>*</code> que é a mesma coisa. Ambos instalar a última versão do módulo.</p>
+<h2 id="Conclusao"><a href="#Conclusao" class="headerlink" title="Conclusão"></a>Conclusão</h2><p>Ainda é cedo para dizer se o Browserify é a melhor opção para modularizar seus arquivos JS. Mas vale muito a pena testar, principalmente se a aplicação já usa node no back-end ou no front-end, ou nos dois :)</p>
+<p>Arquivos de exemplo no meu github:</p>
+<p><a href="https://github.com/diogomoretti/browserify-example" class="btn btn-primary" target="_blank" rel="external"><i class="fa fa-white fa-github"></i> Browserify example</a></p>
+<div class="translation-note"><p>Este artigo é uma versão traduzida de <a href="http://www.sitepoint.com/getting-started-browserify/" target="_blank">Getting Started with Browserify</a> com a devida permissão do autor <a href="https://twitter.com/thatpatrickguy" target="_blank">Patrick Catanzariti</a> e do <a href="http://www.sitepoint.com" target="_blank">SitePoint</a>. Alguns exemplos e trechos do texto foram alterados para fazer sentido ao público-alvo.</p></div>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;Saiba como começar com a modularizar seu código usando o Browserify&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="tutorial" scheme="http://diogo.nu/categories/tutorial/"/>
+    
+    
+      <category term="javascript" scheme="http://diogo.nu/tags/javascript/"/>
+    
+      <category term="browserify" scheme="http://diogo.nu/tags/browserify/"/>
+    
+      <category term="nodejs" scheme="http://diogo.nu/tags/nodejs/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Slush, o novo Yeoman</title>
+    <link href="http://diogo.nu/slush-o-novo-yeoman/"/>
+    <id>http://diogo.nu/slush-o-novo-yeoman/</id>
+    <published>2014-04-21T20:03:41.000Z</published>
+    <updated>2016-09-18T16:59:28.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>Conheça o novo generator que utiliza Gulp para o scaffolding de seus projetos </p>
+<a id="more"></a>
+<p>Ultimamente tem se falado muito em melhoras no workflow. Cada desenvolvedor tem o seu método de trabalhar. Mas todos possuem algo em comum: acham um saco ter que copiar os arquivos de um lado para o outro para ter que criar um novo projeto. É neste momento que entram os <em>generators</em>.</p>
+<h2 id="Yeoman-e-Boilerplates"><a href="#Yeoman-e-Boilerplates" class="headerlink" title="Yeoman e Boilerplates"></a>Yeoman e Boilerplates</h2><p>Foi pensando nisso que nos últimos anos (2˜3) passaram a surgir vários <em>boilerplates</em> e <em>generators</em>, esse ultimo mais especificamente utilizando o <a href="http://yeoman.io/" target="_blank" rel="external">Yeoman</a>. Sim, nossa vida melhorou muito. Cada projeto que iniciamos sempre possui uma estrutura inicial padrão, e agora você não precisa mais copiar e colar arquivos de um lado para o outro.</p>
+<p>Se você ainda não conhece o <a href="http://yeoman.io/" target="_blank" rel="external">Yeoman</a>, ele é uma stack client-side feito em NodeJS que permite que você crie <em>generators</em> de várias aplicações web, utilizando as mais diversas tecnologias. Atualmente a comunidade já criou <a href="http://yeoman.io/community-generators.html" target="_blank" rel="external">quase 700 generators</a>, além dos <a href="http://yeoman.io/official-generators.html" target="_blank" rel="external">official generators</a> e também dos que não aparecem em nenhumas dessas listas.</p>
+<p>O <a href="http://yeoman.io/" target="_blank" rel="external">Yeoman</a> utiliza do <a href="http://gruntjs.com/" target="_blank" rel="external">Grunt</a> para fazer o scaffolding e do <a href="http://bower.io/" target="_blank" rel="external">Bower</a> para baixar as dependências dos projetos.</p>
+<p>Apesar dos muitos <em>generators</em>, criar um generator exige muito cuidado, além de ler um pouco a documentação do Yeoman.</p>
+<p>Com o surgimento do <a href="http://gulpjs.com/" target="_blank" rel="external">GulpJS</a>, um <em>task runner</em>, assim como o Grunt, foi criado o <a href="http://slushjs.github.io/#/" target="_blank" rel="external">Slush</a>, um generator que utiliza o Gulp, ao invés do Grunt, além de ter um proposta mais simples.</p>
+<h2 id="Comecando-com-o-Slush"><a href="#Comecando-com-o-Slush" class="headerlink" title="Começando com o Slush"></a>Começando com o Slush</h2><p>O <a href="http://slushjs.github.io/#/" target="_blank" rel="external">Slush</a> depende apenas do <a href="http://gulpjs.com/" target="_blank" rel="external">GulpJS</a> e de <a href="http://gulpjs.com/plugins/" target="_blank" rel="external">seus plugins</a>. Para quem já mexeu com o Gulp, não terá muita dificuldade. Se você ainda não mexeu com o Gulp, aconselho o artigo do <strong>Leonardo Souza</strong>, <a href="http://blog.caelum.com.br/bye-bye-grunt-js-hello-gulp-js/" target="_blank" rel="external">Bye bye Grunt.js, hello Gulp.js!</a>.</p>
+<h3 id="Instalando-o-Slush"><a href="#Instalando-o-Slush" class="headerlink" title="Instalando o Slush"></a>Instalando o Slush</h3><p>Para instalar o Slush, basta ter o <a href="http://nodejs.org/" target="_blank" rel="external">NodeJS</a> instalado na sua máquina. Se você já tem, basta instalar o Slush de modo global:</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><div class="line">$ [sudo] npm install -g slush</div></pre></td></tr></table></figure>
+<h3 id="Criando-seu-primeiro-generator"><a href="#Criando-seu-primeiro-generator" class="headerlink" title="Criando seu primeiro generator"></a>Criando seu primeiro generator</h3><p>Como exemplo, nosso projeto irá gerar um scaffolding para trabalhar com a <a href="http://code.tutsplus.com/tutorials/introduction-to-the-mean-stack--cms-19918" target="_blank" rel="external">stack MEAN</a>. Todo generator para Slush deve ter o prefixo <strong>slush-</strong>. Então vamos criar uma pasta chamada <strong>slush-mean</strong> e entrar nela:</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><div class="line">$ mkdir slush-mean &amp;&amp; <span class="built_in">cd</span> slush-mean</div></pre></td></tr></table></figure>
+<h3 id="Criacao-do-arquivo-package-json"><a href="#Criacao-do-arquivo-package-json" class="headerlink" title="Criação do arquivo package.json"></a>Criação do arquivo package.json</h3><p>Então primeiro vamos criar um arquivo chamado <strong>package.json</strong>, parecido com esse:</p>
+<figure class="highlight json"><table><tr><td class="code"><pre><div class="line">&#123;</div><div class="line">  <span class="attr">"name"</span>: <span class="string">"slush-mean"</span>,</div><div class="line">  <span class="attr">"version"</span>: <span class="string">"0.1.0"</span>,</div><div class="line">  <span class="attr">"description"</span>: <span class="string">"Generate a simple web project using M.E.A.N. stack"</span>,</div><div class="line">  <span class="attr">"main"</span>: <span class="string">"slushfile.js"</span>,</div><div class="line">  <span class="attr">"keywords"</span>: [</div><div class="line">    <span class="string">"slushgenerator"</span>,</div><div class="line">    <span class="string">"mean"</span>,</div><div class="line">    <span class="string">"express"</span>,</div><div class="line">    <span class="string">"mongo"</span>,</div><div class="line">    <span class="string">"node"</span>,</div><div class="line">    <span class="string">"angular"</span></div><div class="line">  ],</div><div class="line">  <span class="attr">"dependencies"</span>: &#123;</div><div class="line">    <span class="attr">"gulp"</span>: <span class="string">"~3.5.6"</span>,</div><div class="line">    <span class="attr">"gulp-template"</span>: <span class="string">"~0.1.1"</span>,</div><div class="line">    <span class="attr">"gulp-install"</span>: <span class="string">"~0.1.1"</span>,</div><div class="line">    <span class="attr">"gulp-conflict"</span>: <span class="string">"~0.1.1"</span>,</div><div class="line">    <span class="attr">"gulp-rename"</span>: <span class="string">"~1.2.0"</span>,</div><div class="line">    <span class="attr">"underscore.string"</span>: <span class="string">"~2.3.3"</span>,</div><div class="line">    <span class="attr">"inquirer"</span>: <span class="string">"~0.4.1"</span></div><div class="line">  &#125;,</div><div class="line">  <span class="attr">"author"</span>: <span class="string">"Seu Nome"</span>,</div><div class="line">  <span class="attr">"license"</span>: <span class="string">"MIT"</span></div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>Vale ressaltar dois pontos/linhas importantes nesse arquivo:</p>
+<ul>
+<li>No <strong>main</strong> devemos colocar o <strong>slushfile.js</strong>, pois assim como o Grunt e o Gulp, o Slush utiliza um arquivo de configuração próprio. Além do mais, o <strong>main</strong> é utilizado pelo <em>npm</em> para executar esse arquivo quando o módulo for instalado (veremos isso a seguir).</li>
+<li>Nas <strong>keywords</strong> é importante o uso da palavra-chave <strong>slushgenerator</strong> para que seu gerador apareça na lista “oficial”, lá no site do <a href="http://slushjs.github.io/#/" target="_blank" rel="external">Slush</a>.</li>
+</ul>
+<h3 id="Instalar-as-dependencias"><a href="#Instalar-as-dependencias" class="headerlink" title="Instalar as dependências"></a>Instalar as dependências</h3><p>Depois que o arquivo <strong>package.json</strong> foi criado, vamos instalar as dependências:</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><div class="line">$ [sudo] npm install</div></pre></td></tr></table></figure>
+<h3 id="Criar-arquivo-slushfile-js"><a href="#Criar-arquivo-slushfile-js" class="headerlink" title="Criar arquivo slushfile.js"></a>Criar arquivo slushfile.js</h3><p>Vamos agora criar um arquivo chamado <strong>slushfile.js</strong> na raiz, junto com seu package.json. O arquivo explica-se por si só, mas depois dele vou colocar algumas observações:</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><div class="line"><span class="comment">/*</span></div><div class="line"> * slush-mean</div><div class="line"> * https://github.com/seu-nome/slush-mean</div><div class="line"> *</div><div class="line"> * Copyright (c) 2014, Seu Nome</div><div class="line"> * Licensed under the MIT license.</div><div class="line"> */</div><div class="line"><span class="meta"></span></div><div class="line">'use strict';</div><div class="line"></div><div class="line"><span class="keyword">var</span> gulp     = <span class="built_in">require</span>(<span class="string">'gulp'</span>),</div><div class="line">    install  = <span class="built_in">require</span>(<span class="string">'gulp-install'</span>),</div><div class="line">    conflict = <span class="built_in">require</span>(<span class="string">'gulp-conflict'</span>),</div><div class="line">    template = <span class="built_in">require</span>(<span class="string">'gulp-template'</span>),</div><div class="line">    rename   = <span class="built_in">require</span>(<span class="string">'gulp-rename'</span>),</div><div class="line">    _        = <span class="built_in">require</span>(<span class="string">'underscore.string'</span>),</div><div class="line">    inquirer = <span class="built_in">require</span>(<span class="string">'inquirer'</span>);</div><div class="line"></div><div class="line"></div><div class="line">gulp.task(<span class="string">'default'</span>, <span class="function"><span class="keyword">function</span>(<span class="params">done</span>) </span>&#123;</div><div class="line"></div><div class="line">    <span class="comment">//Answers</span></div><div class="line">    <span class="keyword">var</span> prompts = [&#123;</div><div class="line">        name: <span class="string">'appName'</span>,</div><div class="line">        message: <span class="string">'What the name of project?'</span></div><div class="line">    &#125;, &#123;</div><div class="line">        name: <span class="string">'appDescription'</span>,</div><div class="line">        message: <span class="string">'What the description?'</span></div><div class="line">    &#125;, &#123;</div><div class="line">        name: <span class="string">'appVersion'</span>,</div><div class="line">        message: <span class="string">'What the version?'</span>,</div><div class="line">        <span class="keyword">default</span>: <span class="string">'0.1.0'</span></div><div class="line">    &#125;, &#123;</div><div class="line">        name: <span class="string">'appAuthor'</span>,</div><div class="line">        message: <span class="string">'Name of author?'</span></div><div class="line">    &#125;, &#123;</div><div class="line">        name: <span class="string">'appEmail'</span>,</div><div class="line">        message: <span class="string">'Author e-mail?'</span></div><div class="line">    &#125;];</div><div class="line"></div><div class="line">    <span class="comment">//Ask</span></div><div class="line">    inquirer.prompt(prompts,</div><div class="line">        <span class="function"><span class="keyword">function</span>(<span class="params">answers</span>) </span>&#123;</div><div class="line">            <span class="keyword">if</span> (!answers.appName) &#123;</div><div class="line">                <span class="keyword">return</span> done();</div><div class="line">            &#125;</div><div class="line">            answers.appNameSlug = _.slugify(answers.appName)</div><div class="line">            answers.appAuthorSlug = _.slugify(answers.appAuthor)</div><div class="line">            gulp.src(__dirname + <span class="string">'/templates/**'</span>)</div><div class="line">                .pipe(template(answers))</div><div class="line">                .pipe(rename(<span class="function"><span class="keyword">function</span>(<span class="params">file</span>) </span>&#123;</div><div class="line">                    <span class="keyword">if</span> (file.basename[<span class="number">0</span>] === <span class="string">'_'</span>) &#123;</div><div class="line">                        file.basename = <span class="string">'.'</span> + file.basename.slice(<span class="number">1</span>);</div><div class="line">                    &#125;</div><div class="line">                &#125;))</div><div class="line">                .pipe(conflict(<span class="string">'./'</span>))</div><div class="line">                .pipe(gulp.dest(<span class="string">'./'</span>))</div><div class="line">                .pipe(install())</div><div class="line">                .on(<span class="string">'end'</span>, <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</div><div class="line">                    done();</div><div class="line">                &#125;);</div><div class="line">        &#125;);</div><div class="line">&#125;);</div></pre></td></tr></table></figure>
+<p>Alguns pontos a serem observados:</p>
+<ul>
+<li>Na linha onde tem <strong>/templates/</strong> **, é nessa pasta que irá ficar os arquivos a serem “extraidos”</li>
+<li>Note que nas perguntas, existe a opção de colocar uma resposta “default” quando o cara só der ENTER</li>
+</ul>
+<h3 id="Criando-os-arquivos-a-serem-gerados"><a href="#Criando-os-arquivos-a-serem-gerados" class="headerlink" title="Criando os arquivos a serem gerados"></a>Criando os arquivos a serem gerados</h3><p>Essa parte é simples. Coloque dentro da pasta <strong>templates</strong> tudo que irá ser extraído. E agora vem a parte boa. Quando você quiser “printar” o valor de uma resposta, simplesmente coloque <code>&lt;%= nomeDaVariavelResposta %&gt;</code> nos arquivos.</p>
+<p>Por exemplo, crie eum arquivo chamado <code>package.json</code> dentro da pasta <code>templates</code>:</p>
+<figure class="highlight"><table><tr><td class="code"><pre><div class="line">&#123;</div><div class="line">  "name": "&lt;%= appNameSlug %&gt;",</div><div class="line">  "description": "&lt;%= appDescription %&gt;",</div><div class="line">  "version": "&lt;%= appVersion %&gt;",</div><div class="line">  "author": &#123;</div><div class="line">    "name": "&lt;%= appAuthor %&gt;",</div><div class="line">    "url": "&lt;%= appEmail %&gt;"</div><div class="line">  &#125;,</div><div class="line">  ...</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>Um ponto importante, é que os arquivos lá da pasta templates que começam com <code>.</code>, como por exemplo o <code>.gitignore</code> você deverá substituir por <code>_</code>, ficando assim <code>_gitignore</code>. Mas não se preocupe, na hora que ele é gerado/compilado, ele se é renomeado para <code>.gitignore</code>. Isso é feito pelo <code>gulp-rename</code> para que os arquivos de configuração que começam com o <code>.</code>, não tenham seu comportamento padrão.</p>
+<p>Quando o generator for utilizado, o Slush/Gulp nada mais irá fazer que extrair tudo que está na pasta <strong>templates</strong> para a raiz e deletar os arquivos que ali estavam (slushfile.js, package.json, …).</p>
+<h3 id="Estrutura-de-arquivos"><a href="#Estrutura-de-arquivos" class="headerlink" title="Estrutura de arquivos"></a>Estrutura de arquivos</h3><figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">slush-mean/</div><div class="line">├── templates/</div><div class="line">│   ├── gulpfile.js</div><div class="line">│   ├── package.json</div><div class="line">│   └── ...</div><div class="line">├── slushfile.js</div><div class="line">└── package.json</div></pre></td></tr></table></figure>
+<h3 id="Testando-e-Publicando-no-NPM"><a href="#Testando-e-Publicando-no-NPM" class="headerlink" title="Testando e Publicando no NPM"></a>Testando e Publicando no NPM</h3><p>Para você testar seu gerador, utilize o comando <code>npm link .</code>, isso irá criar um <em>alias</em> no seu npm/node. Agora você já pode testar seu generator. Crie outra pasta fora dessa estrutura e rode o comando <code>slush mean</code>. Para publicar nos registros oficias do NPM, utilize o comando <code>npm publish</code>. Se tiver dúvidas de como publicar um módulo, consulte o próprio <a href="https://www.npmjs.org/" target="_blank" rel="external">site do NPM</a>.</p>
+<h2 id="Conclusao"><a href="#Conclusao" class="headerlink" title="Conclusão"></a>Conclusão</h2><p>Vimos que com apenas <strong>dois</strong> arquivos conseguimos construir um <em>generator like a Yeoman</em>, só que bem mais simples. Eu mesmo criei um generator que irei explicar em outro post como foi feito, bem como o modo de usar.</p>
+<p>Esse artigo parte do princípio de que você já tenha alguma familiariada com Node, NPM, Task Runner, Terminal entre outras coisas.</p>
+<p>Qualquer dúvida, fique a vontade para publicar seu comentário!</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;Conheça o novo generator que utiliza Gulp para o scaffolding de seus projetos &lt;/p&gt;
+    
+    </summary>
+    
+      <category term="tutorial" scheme="http://diogo.nu/categories/tutorial/"/>
+    
+    
+      <category term="slush" scheme="http://diogo.nu/tags/slush/"/>
+    
+      <category term="generator" scheme="http://diogo.nu/tags/generator/"/>
+    
+      <category term="yeoman" scheme="http://diogo.nu/tags/yeoman/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>SGS, meu grid em Stylus</title>
+    <link href="http://diogo.nu/sgs-meu-grid-em-stylus/"/>
+    <id>http://diogo.nu/sgs-meu-grid-em-stylus/</id>
+    <published>2014-04-01T01:03:21.000Z</published>
+    <updated>2016-09-18T16:59:28.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>Hoje em dia existem muitos sistemas de grid. Mas cada um tem sempre alguma coisa que não gostamos.</p>
+<a id="more"></a>
+<p>Por isso resolvi criar meu próprio sistema de grid, escrito em <a href="http://learnboost.github.io/stylus/" target="_blank" rel="external">Stylus</a>, meu pré-processador css favorito. Fiz ele todo fluído (não possui largura fixa) e também fiz opção de ser semântico ou não.</p>
+<h2 id="Semantico-x-Nao-Semantico"><a href="#Semantico-x-Nao-Semantico" class="headerlink" title="Semântico x Não-Semântico"></a>Semântico x Não-Semântico</h2><p>Essa discussão gera muitos comentários nas comunidades front-end. Para quem não sabe, o <strong>grid não-semântico</strong> é aquele que utiliza classe no html para criar o grid, por exemplo classes como span1, column3, grid2. Já o <strong>grid semântico</strong> é aquele que deixa a formatação do grid para o css, por exemplo: você põe uma classe chamada “sidebar”, e lá no css coloca as propriedades do grid dentro de “.sidebar”.</p>
+<p>Eu particularmente gosto muito de <strong>grids semânticos</strong>, pois concentro toda minha lógica no css. A questão de semântica não fica apenas em grid, na verdade ela é em todo o documento. Um HTML semântico não possui classes do tipo “box-right” ou “button-red”. Para uma boa escrita semântica, devemos colocar a <strong>função</strong> do elemento, e não sua posição ou cor, por exemplo.</p>
+<p>O assunto de semântica se estende também para o correto uso das tags, acessibilidade com <a href="http://www.w3.org/WAI/intro/aria" target="_blank" rel="external">WAI-ARIA</a> e <a href="https://schema.org/" target="_blank" rel="external">Schema.org</a>. Mas isso fica para um próximo post.</p>
+<h2 id="Sistemas-de-grid"><a href="#Sistemas-de-grid" class="headerlink" title="Sistemas de grid"></a>Sistemas de grid</h2><p>Desde que sistemas de grid começaram a surgir, por volta de 2008/2009, sempre utilizei-os. Gostava muito na época o <a href="http://www.blueprintcss.org/" target="_blank" rel="external">Blueprint</a>. Ele não é semântico, mas na época colocar duas colunas lado a lado com apenas uma classe era algo a ser muito comemorado.</p>
+<p>Todos os grids utilizavam o sistema não-semântico até a chegada dos pré-processadores css, em 2011. E assim se deu um boom de sistemas de grid na internet, cada um com sua peculiaridade.</p>
+<p>Hoje em dia é muito fácil se perder na hora de escolher um grid. Mas não adianta, mesmo aquele que mais te agradou sempre terá algo que você gostaria de melhorar ou até mesmo adicionar novas <em>features</em>. Por querer adicionar essas features, 90% dos grids hoje são feitos com algum pré-processador e claro, de código open-source no <a href="https://github.com" target="_blank" rel="external">Github</a>.</p>
+<p>Como quase todo mundo utiliza pré-processadores css, cada um escolhe o sistema de grid baseado na sua “língua”. Seja em <a href="http://learnboost.github.io/stylus/" target="_blank" rel="external">Stylus</a>, <a href="http://sass-lang.com/" target="_blank" rel="external">Sass</a>, <a href="http://lesscss.org/" target="_blank" rel="external">Less</a> ou até mesmo em <a href="http://roole.org/" target="_blank" rel="external">Roole</a>.</p>
+<p>Foi com base na “língua” que a muito tempo venho utilizando o <a href="http://semantic.gs" target="_blank" rel="external">Semantic.gs</a>, na sua versão para o Stylus. Mas algumas coisas vinham me incomodando, como por exemplo não possuir muitas variáveis de configuração. Foi adicionando algumas <em>features</em> que quando eu vi, eu estava com um sistema de grid bem diferente (nem tanto, pois o “make-grid” é o mesmo) do <em>default</em> do Semantic.gs.</p>
+<h2 id="SGS-Stylus-Grid-System"><a href="#SGS-Stylus-Grid-System" class="headerlink" title="SGS (Stylus Grid System)"></a>SGS (Stylus Grid System)</h2><p>O <strong>SGS</strong> é um <em>fork</em> do Semantic.gs, com várias variáveis de configuração e algumas outras features, dentre elas:</p>
+<ul>
+<li>Fluído</li>
+<li>Responsivo já com a definição dos breakpoints</li>
+<li>Box-sizing: border-box aplicado globalmente (*)</li>
+<li>Semântico e Não-Semântico</li>
+<li>Variáveis de configuração (espaçamento, <em>padding</em>…)</li>
+</ul>
+<p>A documentação e o próprio grid estarão em constante desenvolvimento.</p>
+<p>Ahh, encontrou algum erro ou quer colaborar com novas funcionalidades? Dê um <em>fork</em>, <em>pull request</em> ou abra uma issue no Github.</p>
+<p><a href="http://diogomoretti.github.io/sgs/" class="btn btn-info" target="_blank" rel="external"><i class="fa fa-share"></i>SGS - Stylus Grid System</a></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;Hoje em dia existem muitos sistemas de grid. Mas cada um tem sempre alguma coisa que não gostamos.&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="project" scheme="http://diogo.nu/categories/project/"/>
+    
+      <category term="open-source" scheme="http://diogo.nu/categories/project/open-source/"/>
+    
+    
+      <category term="html5" scheme="http://diogo.nu/tags/html5/"/>
+    
+      <category term="css" scheme="http://diogo.nu/tags/css/"/>
+    
+      <category term="stylus" scheme="http://diogo.nu/tags/stylus/"/>
+    
+      <category term="grid" scheme="http://diogo.nu/tags/grid/"/>
+    
+  </entry>
+  
+</feed>

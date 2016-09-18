@@ -1,0 +1,234 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    
+    <title>Slush, o novo Yeoman | Diogo Moretti - Front-end developer based in Florianopolis / SC / Brazil</title>
+    <meta name="author" content="Diogo Moretti">
+    
+    <meta name="description" content="Front-end developer based in Florianopolis / SC / Brazil">
+    
+    
+    <meta name="keywords" content="front-end, frontend, desenvolvedor, Diogo Moretti, florianopolis, santa catarina, sc, brazil, front in floripa, femug-sc, floripajs" />
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" />
+
+    <!-- Facebook Meta -->
+    <meta property="fb:app_id" content="1442669005975536">
+    <meta property="og:title" content="Slush, o novo Yeoman / Diogo Moretti">
+    <meta property="og:url" content="http://diogo.nu/slush-o-novo-yeoman/index.html">
+    <meta property="og:image" content="http://diogo.nu/img/posts/2014/slush.png">
+    <meta property="og:type" content="website">
+    <meta property="og:description" content="Front-end developer based in Florianopolis / SC / Brazil">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/img/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" href="/img/favicons/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="/img/favicons/favicon-16x16.png" sizes="16x16">
+    <link rel="manifest" href="/img/favicons/manifest.json">
+    <link rel="mask-icon" href="/img/favicons/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="theme-color" content="#ffffff">
+    
+    <link href="//fonts.googleapis.com/css?family=Open+Sans:400,300,700" rel="stylesheet" type="text/css">
+    <link rel="alternate" href="/atom.xml" title="Diogo Moretti" type="application/atom+xml">
+    <link rel="stylesheet" href="/css/style.css" media="screen" type="text/css">
+</head>
+
+<body>
+  <header id="header">
+    <h1 class="user-logo">
+        <a href="/">
+            <img class="photo-profile" src="/img/diogo_avatar_2015.jpg" alt="Diogo Moretti" />
+        </a>
+    </h1>
+    <h2 class="user-name">
+        <a class="user-name-link" href="/index.html">Diogo Moretti</a>
+    </h2>
+    <p class="user-desc">Front-end developer based in Florianopolis / SC / Brazil</p>
+    <nav class="nav-collapse">
+        <ul id="nav">
+            <li class="nav-item"><a class="nav-link" href="/about">About</a></li>
+            <li class="nav-item"><a class="nav-link active" href="/">Blog</a></li>
+            <li class="nav-item"><a class="nav-link" href="/projects">Projects</a></li>
+            <li class="nav-item"><a class="nav-link" href="/talks">Talks</a></li>
+            <li class="nav-item"><a class="nav-link" href="/contact">Contact</a></li>
+        </ul>
+    </nav>
+    <ul id="social">
+        <li class="nav-social-item">
+            <a target="_blank" class="nav-social-link icon-github-squared" href="https://github.com/diogomoretti">
+                <span class="name-social">Github</span>
+            </a>
+        </li>
+        <li class="nav-social-item">
+            <a target="_blank" class="nav-social-link icon-linkedin-squared" href="http://linkedin.com/in/diogomoretti">
+                <span class="name-social">Linkedin</span>
+            </a>
+        </li>
+        <li class="nav-social-item">
+            <a target="_blank" class="nav-social-link icon-twitter-squared" href="https://twitter.com/diogomoretti_">
+                <span class="name-social">Twitter</span>
+            </a>
+        </li>
+        <li class="nav-social-item">
+            <a target="_blank" class="nav-social-link icon-gplus-squared" href="https://plus.google.com/+DiogoMoretti">
+                <span class="name-social">Google Plus</span>
+            </a>
+        </li>
+        <li class="nav-social-item">
+            <a target="_blank" class="nav-social-link icon-facebook-squared" href="https://www.facebook.com/diogombb">
+                <span class="name-social">Facebook</span>
+            </a>
+        </li>
+        <li class="nav-social-item">
+            <a target="_blank" class="nav-social-link fa fa-rss-square" href="/atom.xml" style="margin-left: .3em">
+                <span class="name-social">Feed</span>
+            </a>
+        </li>
+    </ul>
+</header>
+  <section id="main">
+  	
+<article class="post">
+  
+    <div class="gallery">
+  <div class="photoset">
+    
+      <img src="">
+    
+  </div>
+  <div class="control">
+    <div class="prev"></div>
+    <div class="next"></div>
+  </div>
+</div>
+  
+  <div class="post-content">
+    <header>
+      
+        <time class="date-item" datetime="2014-04-21T20:03:41.000Z"><a class="link-time-item" href="/slush-o-novo-yeoman/">Apr 21 2014</a></time>
+      
+      
+  
+    <h1 class="title">Slush, o novo Yeoman</h1>
+  
+
+    </header>
+    
+      <a href="/slush-o-novo-yeoman/" class="feature-box" style="background-color: #e8e8e8">
+        <img class="feature-photo" src="/img/posts/2014/slush.png" />
+      </a>
+    
+    <div class="entry">
+      
+        <p>Conheça o novo generator que utiliza Gulp para o scaffolding de seus projetos </p>
+<a id="more"></a>
+<p>Ultimamente tem se falado muito em melhoras no workflow. Cada desenvolvedor tem o seu método de trabalhar. Mas todos possuem algo em comum: acham um saco ter que copiar os arquivos de um lado para o outro para ter que criar um novo projeto. É neste momento que entram os <em>generators</em>.</p>
+<h2 id="Yeoman-e-Boilerplates"><a href="#Yeoman-e-Boilerplates" class="headerlink" title="Yeoman e Boilerplates"></a>Yeoman e Boilerplates</h2><p>Foi pensando nisso que nos últimos anos (2˜3) passaram a surgir vários <em>boilerplates</em> e <em>generators</em>, esse ultimo mais especificamente utilizando o <a href="http://yeoman.io/" target="_blank" rel="external">Yeoman</a>. Sim, nossa vida melhorou muito. Cada projeto que iniciamos sempre possui uma estrutura inicial padrão, e agora você não precisa mais copiar e colar arquivos de um lado para o outro.</p>
+<p>Se você ainda não conhece o <a href="http://yeoman.io/" target="_blank" rel="external">Yeoman</a>, ele é uma stack client-side feito em NodeJS que permite que você crie <em>generators</em> de várias aplicações web, utilizando as mais diversas tecnologias. Atualmente a comunidade já criou <a href="http://yeoman.io/community-generators.html" target="_blank" rel="external">quase 700 generators</a>, além dos <a href="http://yeoman.io/official-generators.html" target="_blank" rel="external">official generators</a> e também dos que não aparecem em nenhumas dessas listas.</p>
+<p>O <a href="http://yeoman.io/" target="_blank" rel="external">Yeoman</a> utiliza do <a href="http://gruntjs.com/" target="_blank" rel="external">Grunt</a> para fazer o scaffolding e do <a href="http://bower.io/" target="_blank" rel="external">Bower</a> para baixar as dependências dos projetos.</p>
+<p>Apesar dos muitos <em>generators</em>, criar um generator exige muito cuidado, além de ler um pouco a documentação do Yeoman.</p>
+<p>Com o surgimento do <a href="http://gulpjs.com/" target="_blank" rel="external">GulpJS</a>, um <em>task runner</em>, assim como o Grunt, foi criado o <a href="http://slushjs.github.io/#/" target="_blank" rel="external">Slush</a>, um generator que utiliza o Gulp, ao invés do Grunt, além de ter um proposta mais simples.</p>
+<h2 id="Comecando-com-o-Slush"><a href="#Comecando-com-o-Slush" class="headerlink" title="Começando com o Slush"></a>Começando com o Slush</h2><p>O <a href="http://slushjs.github.io/#/" target="_blank" rel="external">Slush</a> depende apenas do <a href="http://gulpjs.com/" target="_blank" rel="external">GulpJS</a> e de <a href="http://gulpjs.com/plugins/" target="_blank" rel="external">seus plugins</a>. Para quem já mexeu com o Gulp, não terá muita dificuldade. Se você ainda não mexeu com o Gulp, aconselho o artigo do <strong>Leonardo Souza</strong>, <a href="http://blog.caelum.com.br/bye-bye-grunt-js-hello-gulp-js/" target="_blank" rel="external">Bye bye Grunt.js, hello Gulp.js!</a>.</p>
+<h3 id="Instalando-o-Slush"><a href="#Instalando-o-Slush" class="headerlink" title="Instalando o Slush"></a>Instalando o Slush</h3><p>Para instalar o Slush, basta ter o <a href="http://nodejs.org/" target="_blank" rel="external">NodeJS</a> instalado na sua máquina. Se você já tem, basta instalar o Slush de modo global:</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><div class="line">$ [sudo] npm install -g slush</div></pre></td></tr></table></figure>
+<h3 id="Criando-seu-primeiro-generator"><a href="#Criando-seu-primeiro-generator" class="headerlink" title="Criando seu primeiro generator"></a>Criando seu primeiro generator</h3><p>Como exemplo, nosso projeto irá gerar um scaffolding para trabalhar com a <a href="http://code.tutsplus.com/tutorials/introduction-to-the-mean-stack--cms-19918" target="_blank" rel="external">stack MEAN</a>. Todo generator para Slush deve ter o prefixo <strong>slush-</strong>. Então vamos criar uma pasta chamada <strong>slush-mean</strong> e entrar nela:</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><div class="line">$ mkdir slush-mean &amp;&amp; <span class="built_in">cd</span> slush-mean</div></pre></td></tr></table></figure>
+<h3 id="Criacao-do-arquivo-package-json"><a href="#Criacao-do-arquivo-package-json" class="headerlink" title="Criação do arquivo package.json"></a>Criação do arquivo package.json</h3><p>Então primeiro vamos criar um arquivo chamado <strong>package.json</strong>, parecido com esse:</p>
+<figure class="highlight json"><table><tr><td class="code"><pre><div class="line">&#123;</div><div class="line">  <span class="attr">"name"</span>: <span class="string">"slush-mean"</span>,</div><div class="line">  <span class="attr">"version"</span>: <span class="string">"0.1.0"</span>,</div><div class="line">  <span class="attr">"description"</span>: <span class="string">"Generate a simple web project using M.E.A.N. stack"</span>,</div><div class="line">  <span class="attr">"main"</span>: <span class="string">"slushfile.js"</span>,</div><div class="line">  <span class="attr">"keywords"</span>: [</div><div class="line">    <span class="string">"slushgenerator"</span>,</div><div class="line">    <span class="string">"mean"</span>,</div><div class="line">    <span class="string">"express"</span>,</div><div class="line">    <span class="string">"mongo"</span>,</div><div class="line">    <span class="string">"node"</span>,</div><div class="line">    <span class="string">"angular"</span></div><div class="line">  ],</div><div class="line">  <span class="attr">"dependencies"</span>: &#123;</div><div class="line">    <span class="attr">"gulp"</span>: <span class="string">"~3.5.6"</span>,</div><div class="line">    <span class="attr">"gulp-template"</span>: <span class="string">"~0.1.1"</span>,</div><div class="line">    <span class="attr">"gulp-install"</span>: <span class="string">"~0.1.1"</span>,</div><div class="line">    <span class="attr">"gulp-conflict"</span>: <span class="string">"~0.1.1"</span>,</div><div class="line">    <span class="attr">"gulp-rename"</span>: <span class="string">"~1.2.0"</span>,</div><div class="line">    <span class="attr">"underscore.string"</span>: <span class="string">"~2.3.3"</span>,</div><div class="line">    <span class="attr">"inquirer"</span>: <span class="string">"~0.4.1"</span></div><div class="line">  &#125;,</div><div class="line">  <span class="attr">"author"</span>: <span class="string">"Seu Nome"</span>,</div><div class="line">  <span class="attr">"license"</span>: <span class="string">"MIT"</span></div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>Vale ressaltar dois pontos/linhas importantes nesse arquivo:</p>
+<ul>
+<li>No <strong>main</strong> devemos colocar o <strong>slushfile.js</strong>, pois assim como o Grunt e o Gulp, o Slush utiliza um arquivo de configuração próprio. Além do mais, o <strong>main</strong> é utilizado pelo <em>npm</em> para executar esse arquivo quando o módulo for instalado (veremos isso a seguir).</li>
+<li>Nas <strong>keywords</strong> é importante o uso da palavra-chave <strong>slushgenerator</strong> para que seu gerador apareça na lista “oficial”, lá no site do <a href="http://slushjs.github.io/#/" target="_blank" rel="external">Slush</a>.</li>
+</ul>
+<h3 id="Instalar-as-dependencias"><a href="#Instalar-as-dependencias" class="headerlink" title="Instalar as dependências"></a>Instalar as dependências</h3><p>Depois que o arquivo <strong>package.json</strong> foi criado, vamos instalar as dependências:</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><div class="line">$ [sudo] npm install</div></pre></td></tr></table></figure>
+<h3 id="Criar-arquivo-slushfile-js"><a href="#Criar-arquivo-slushfile-js" class="headerlink" title="Criar arquivo slushfile.js"></a>Criar arquivo slushfile.js</h3><p>Vamos agora criar um arquivo chamado <strong>slushfile.js</strong> na raiz, junto com seu package.json. O arquivo explica-se por si só, mas depois dele vou colocar algumas observações:</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><div class="line"><span class="comment">/*</span></div><div class="line"> * slush-mean</div><div class="line"> * https://github.com/seu-nome/slush-mean</div><div class="line"> *</div><div class="line"> * Copyright (c) 2014, Seu Nome</div><div class="line"> * Licensed under the MIT license.</div><div class="line"> */</div><div class="line"><span class="meta"></span></div><div class="line">'use strict';</div><div class="line"></div><div class="line"><span class="keyword">var</span> gulp     = <span class="built_in">require</span>(<span class="string">'gulp'</span>),</div><div class="line">    install  = <span class="built_in">require</span>(<span class="string">'gulp-install'</span>),</div><div class="line">    conflict = <span class="built_in">require</span>(<span class="string">'gulp-conflict'</span>),</div><div class="line">    template = <span class="built_in">require</span>(<span class="string">'gulp-template'</span>),</div><div class="line">    rename   = <span class="built_in">require</span>(<span class="string">'gulp-rename'</span>),</div><div class="line">    _        = <span class="built_in">require</span>(<span class="string">'underscore.string'</span>),</div><div class="line">    inquirer = <span class="built_in">require</span>(<span class="string">'inquirer'</span>);</div><div class="line"></div><div class="line"></div><div class="line">gulp.task(<span class="string">'default'</span>, <span class="function"><span class="keyword">function</span>(<span class="params">done</span>) </span>&#123;</div><div class="line"></div><div class="line">    <span class="comment">//Answers</span></div><div class="line">    <span class="keyword">var</span> prompts = [&#123;</div><div class="line">        name: <span class="string">'appName'</span>,</div><div class="line">        message: <span class="string">'What the name of project?'</span></div><div class="line">    &#125;, &#123;</div><div class="line">        name: <span class="string">'appDescription'</span>,</div><div class="line">        message: <span class="string">'What the description?'</span></div><div class="line">    &#125;, &#123;</div><div class="line">        name: <span class="string">'appVersion'</span>,</div><div class="line">        message: <span class="string">'What the version?'</span>,</div><div class="line">        <span class="keyword">default</span>: <span class="string">'0.1.0'</span></div><div class="line">    &#125;, &#123;</div><div class="line">        name: <span class="string">'appAuthor'</span>,</div><div class="line">        message: <span class="string">'Name of author?'</span></div><div class="line">    &#125;, &#123;</div><div class="line">        name: <span class="string">'appEmail'</span>,</div><div class="line">        message: <span class="string">'Author e-mail?'</span></div><div class="line">    &#125;];</div><div class="line"></div><div class="line">    <span class="comment">//Ask</span></div><div class="line">    inquirer.prompt(prompts,</div><div class="line">        <span class="function"><span class="keyword">function</span>(<span class="params">answers</span>) </span>&#123;</div><div class="line">            <span class="keyword">if</span> (!answers.appName) &#123;</div><div class="line">                <span class="keyword">return</span> done();</div><div class="line">            &#125;</div><div class="line">            answers.appNameSlug = _.slugify(answers.appName)</div><div class="line">            answers.appAuthorSlug = _.slugify(answers.appAuthor)</div><div class="line">            gulp.src(__dirname + <span class="string">'/templates/**'</span>)</div><div class="line">                .pipe(template(answers))</div><div class="line">                .pipe(rename(<span class="function"><span class="keyword">function</span>(<span class="params">file</span>) </span>&#123;</div><div class="line">                    <span class="keyword">if</span> (file.basename[<span class="number">0</span>] === <span class="string">'_'</span>) &#123;</div><div class="line">                        file.basename = <span class="string">'.'</span> + file.basename.slice(<span class="number">1</span>);</div><div class="line">                    &#125;</div><div class="line">                &#125;))</div><div class="line">                .pipe(conflict(<span class="string">'./'</span>))</div><div class="line">                .pipe(gulp.dest(<span class="string">'./'</span>))</div><div class="line">                .pipe(install())</div><div class="line">                .on(<span class="string">'end'</span>, <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</div><div class="line">                    done();</div><div class="line">                &#125;);</div><div class="line">        &#125;);</div><div class="line">&#125;);</div></pre></td></tr></table></figure>
+<p>Alguns pontos a serem observados:</p>
+<ul>
+<li>Na linha onde tem <strong>/templates/</strong> **, é nessa pasta que irá ficar os arquivos a serem “extraidos”</li>
+<li>Note que nas perguntas, existe a opção de colocar uma resposta “default” quando o cara só der ENTER</li>
+</ul>
+<h3 id="Criando-os-arquivos-a-serem-gerados"><a href="#Criando-os-arquivos-a-serem-gerados" class="headerlink" title="Criando os arquivos a serem gerados"></a>Criando os arquivos a serem gerados</h3><p>Essa parte é simples. Coloque dentro da pasta <strong>templates</strong> tudo que irá ser extraído. E agora vem a parte boa. Quando você quiser “printar” o valor de uma resposta, simplesmente coloque <code>&lt;%= nomeDaVariavelResposta %&gt;</code> nos arquivos.</p>
+<p>Por exemplo, crie eum arquivo chamado <code>package.json</code> dentro da pasta <code>templates</code>:</p>
+<figure class="highlight"><table><tr><td class="code"><pre><div class="line">&#123;</div><div class="line">  "name": "&lt;%= appNameSlug %&gt;",</div><div class="line">  "description": "&lt;%= appDescription %&gt;",</div><div class="line">  "version": "&lt;%= appVersion %&gt;",</div><div class="line">  "author": &#123;</div><div class="line">    "name": "&lt;%= appAuthor %&gt;",</div><div class="line">    "url": "&lt;%= appEmail %&gt;"</div><div class="line">  &#125;,</div><div class="line">  ...</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>Um ponto importante, é que os arquivos lá da pasta templates que começam com <code>.</code>, como por exemplo o <code>.gitignore</code> você deverá substituir por <code>_</code>, ficando assim <code>_gitignore</code>. Mas não se preocupe, na hora que ele é gerado/compilado, ele se é renomeado para <code>.gitignore</code>. Isso é feito pelo <code>gulp-rename</code> para que os arquivos de configuração que começam com o <code>.</code>, não tenham seu comportamento padrão.</p>
+<p>Quando o generator for utilizado, o Slush/Gulp nada mais irá fazer que extrair tudo que está na pasta <strong>templates</strong> para a raiz e deletar os arquivos que ali estavam (slushfile.js, package.json, …).</p>
+<h3 id="Estrutura-de-arquivos"><a href="#Estrutura-de-arquivos" class="headerlink" title="Estrutura de arquivos"></a>Estrutura de arquivos</h3><figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">slush-mean/</div><div class="line">├── templates/</div><div class="line">│   ├── gulpfile.js</div><div class="line">│   ├── package.json</div><div class="line">│   └── ...</div><div class="line">├── slushfile.js</div><div class="line">└── package.json</div></pre></td></tr></table></figure>
+<h3 id="Testando-e-Publicando-no-NPM"><a href="#Testando-e-Publicando-no-NPM" class="headerlink" title="Testando e Publicando no NPM"></a>Testando e Publicando no NPM</h3><p>Para você testar seu gerador, utilize o comando <code>npm link .</code>, isso irá criar um <em>alias</em> no seu npm/node. Agora você já pode testar seu generator. Crie outra pasta fora dessa estrutura e rode o comando <code>slush mean</code>. Para publicar nos registros oficias do NPM, utilize o comando <code>npm publish</code>. Se tiver dúvidas de como publicar um módulo, consulte o próprio <a href="https://www.npmjs.org/" target="_blank" rel="external">site do NPM</a>.</p>
+<h2 id="Conclusao"><a href="#Conclusao" class="headerlink" title="Conclusão"></a>Conclusão</h2><p>Vimos que com apenas <strong>dois</strong> arquivos conseguimos construir um <em>generator like a Yeoman</em>, só que bem mais simples. Eu mesmo criei um generator que irei explicar em outro post como foi feito, bem como o modo de usar.</p>
+<p>Esse artigo parte do princípio de que você já tenha alguma familiariada com Node, NPM, Task Runner, Terminal entre outras coisas.</p>
+<p>Qualquer dúvida, fique a vontade para publicar seu comentário!</p>
+
+      
+    </div>
+    
+    <footer class="footer-inner">
+      
+        <div class="author">
+    <a href="/about">Diogo Moretti</a>
+</div>
+<div class="time">
+    <a href="http://diogo.nu/slush-o-novo-yeoman/">Abr 21 2014</a>
+</div>
+        
+  
+  <div class="categories">
+    <a href="/categories/tutorial/">tutorial</a>
+  </div>
+
+        
+  
+  <div class="tags">
+    <a href="/tags/slush/">slush</a>, <a href="/tags/generator/">generator</a>, <a href="/tags/yeoman/">yeoman</a>
+  </div>
+
+        
+      
+      <div class="clearfix"></div>
+    </footer>
+    
+  </div>
+  
+    
+<section id="comment">
+  <h1 class="title">Comentários</h1>
+  <div id="disqus_thread">
+    <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+  </div>
+</section>
+
+  
+</article>
+
+  </section>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+<script src="/js/main.js"></script>
+
+
+<script type="text/javascript">
+var disqus_shortname = 'diogomorettiwebsite';
+var disqus_url = 'http://diogo.nu/slush-o-novo-yeoman/index.html';
+
+(function(){
+  var dsq = document.createElement('script');
+  dsq.type = 'text/javascript';
+  dsq.async = true;
+  dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+  (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+}());
+</script>
+
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-50372285-1', 'diogo.nu');
+  ga('send', 'pageview');
+
+</script>
+</body>
+</html>
